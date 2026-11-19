@@ -28,13 +28,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
       <style>
-        html,
-        body {
-          overflow-x: hidden;
-          max-width: 100vw;
-          position: relative;
-        }
-
         html {
           scroll-behavior: smooth
         }
@@ -1363,8 +1356,6 @@
             height: auto !important;
             display: flex;
             flex-direction: column;
-            overflow-x: hidden !important;
-            max-width: 100vw !important;
           }
 
           .hero-content-overlay {
@@ -1578,7 +1569,7 @@
           .hero-morph-track {
             position: relative !important;
             inset: auto !important;
-            height: 100vh !important;
+            height: 180vh !important;
             width: 100%;
             order: 2;
             z-index: 1;
@@ -1591,14 +1582,10 @@
             height: 100vh !important;
             width: 100%;
             overflow: hidden;
-            will-change: transform;
-            transform: translateZ(0);
           }
 
           .hero-stage {
             top: calc(50% + 24px) !important;
-            will-change: transform;
-            transform: translateZ(0);
           }
 
           /* Seção Direitos */
@@ -2922,12 +2909,12 @@ class Component extends DCLogic {
       const oy = (vh / s - 1080) / 2;
       st.style.transform = `translate(-50%,-50%) scale(${s})`;
 
-      const kPill = seg(0.00, 0.22);
-      const kColor = seg(0.04, 0.28);
-      const kDown = seg(0.22, 0.44);
-      const kU = seg(0.44, 0.64);
-      const kSwap = seg(0.64, 0.74);
-      const kUni = seg(0.74, 0.90);
+      const kPill = seg(0.04, 0.32);
+      const kColor = seg(0.08, 0.40);
+      const kDown = seg(0.28, 0.50);
+      const kU = seg(0.50, 0.70);
+      const kSwap = seg(0.70, 0.80);
+      const kUni = seg(0.80, 0.94);
 
       const left = L(-ox, 761, kPill);
       const width = L(1920 + 2 * ox, 210, kPill);
