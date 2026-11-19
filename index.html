@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>UNI Indenizações | Assessoria Especializada em Seguros</title>
   <meta name="description"
     content="Sofreu um acidente? Saiba se você tem direito a receber até R$ 100 mil de indenização de seguros DPVAT, RCF, iFood, transporte por aplicativo e auxílios.">
@@ -1311,6 +1312,18 @@
           pointer-events: auto;
         }
 
+        .hero-hint {
+          position: absolute;
+          left: 0;
+          width: 1920px;
+          top: 926px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          text-align: center;
+        }
+
         .hero-mobile-bg {
           display: none;
         }
@@ -1516,6 +1529,13 @@
 
           .hero-hint {
             display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
+            position: static !important;
+            width: 0 !important;
+            height: 0 !important;
+            overflow: hidden !important;
           }
 
           .hero-mobile-scroll-cue {
@@ -1535,7 +1555,7 @@
           .hero-morph-track {
             position: relative !important;
             inset: auto !important;
-            height: 185vh !important;
+            height: 125vh !important;
             width: 100%;
             order: 2;
             z-index: 1;
@@ -1772,8 +1792,9 @@
                 </button>
               </sc-if>
               <sc-if value="{{ isPlayingHero }}">
-                <iframe src="https://www.youtube.com/embed/JUmf_ULGtvY?autoplay=1" title="Uni Indeniza"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                <iframe src="https://www.youtube-nocookie.com/embed/JUmf_ULGtvY?autoplay=1&rel=0&modestbranding=1" title="Uni Indeniza"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
               </sc-if>
             </div>
@@ -1933,8 +1954,7 @@
               </div>
             </form>
           </div>
-          <div ref="{{ hintRef }}" class="hero-hint"
-            style="position:absolute;left:0;width:1920px;top:926px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+          <div ref="{{ hintRef }}" class="hero-hint">
             <div style="font-size:16px;font-weight:500;color:#0B274E">
               Ainda está com dúvida? <span style="color:#0B274E;font-weight:700">Role para baixo e veja nossas
                 soluções</span></div>
@@ -2357,8 +2377,9 @@
                 </button>
               </sc-if>
               <sc-if value="{{ isPlayingAuxAcidente }}">
-                <iframe src="https://www.youtube.com/embed/AfuY2mBHRvM?autoplay=1" title="Auxílio-Acidente"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                <iframe src="https://www.youtube-nocookie.com/embed/AfuY2mBHRvM?autoplay=1&rel=0&modestbranding=1" title="Auxílio-Acidente"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
               </sc-if>
             </div>
@@ -2456,8 +2477,9 @@
                 </button>
               </sc-if>
               <sc-if value="{{ isPlayingAuxDoenca }}">
-                <iframe src="https://www.youtube.com/embed/eWGJAWsPM38?autoplay=1" title="Auxílio-Doença"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                <iframe src="https://www.youtube-nocookie.com/embed/eWGJAWsPM38?autoplay=1&rel=0&modestbranding=1" title="Auxílio-Doença"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
               </sc-if>
             </div>
@@ -2598,8 +2620,9 @@
                 </button>
               </sc-if>
               <sc-if value="{{ isPlayingDepoimento }}">
-                <iframe src="https://www.youtube.com/embed/JUmf_ULGtvY?autoplay=1" title="Depoimento Grazielle"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                <iframe src="https://www.youtube-nocookie.com/embed/JUmf_ULGtvY?autoplay=1&rel=0&modestbranding=1" title="Depoimento Grazielle"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
               </sc-if>
             </div>
@@ -2847,6 +2870,9 @@ class Component extends DCLogic {
     if (isMobile) {
       // Mobile: conteúdo flui nativamente em 100% da largura via CSS (sem transform: scale)
       if (cst) cst.style.transform = '';
+      if (this.hintRef.current) {
+        this.hintRef.current.style.display = 'none';
+      }
       if (videoEl) {
         videoEl.style.left = '';
         videoEl.style.top = '';
@@ -2871,24 +2897,25 @@ class Component extends DCLogic {
       const oy = (vh / s - 1080) / 2;
       st.style.transform = `translate(-50%,-50%) scale(${s})`;
 
-      const kPill = seg(0.02, 0.28);
-      const kDown = seg(0.24, 0.44);
-      const kColor = seg(0.32, 0.56);
-      const kU = seg(0.44, 0.64);
-      const kSwap = seg(0.60, 0.70);
-      const kUni = seg(0.70, 0.90);
+      const kPill = seg(0.04, 0.30);
+      const kColor = seg(0.08, 0.36);
+      const kDown = seg(0.30, 0.50);
+      const kU = seg(0.50, 0.68);
+      const kSwap = seg(0.68, 0.78);
+      const kUni = seg(0.78, 0.94);
 
       const left = L(-ox, 761, kPill);
       const width = L(1920 + 2 * ox, 210, kPill);
       const top = L(-oy - 140, 390, kU);
       const bottom = L(L(L(1080 + oy, 1015, kPill), 657, kDown), 648, kU);
-      const rad = L(0, 105, kPill);
+      const rad = L(190, 105, kPill);
 
       bg.style.left = left + 'px';
       bg.style.width = width + 'px';
       bg.style.top = top + 'px';
       bg.style.height = Math.max(0, bottom - top) + 'px';
-      bg.style.borderRadius = `0 0 ${rad}px ${rad}px`;
+      bg.style.borderRadius = `${rad}px`;
+      bg.style.boxShadow = kPill > 0.1 ? `0 24px 50px -10px rgba(3, 174, 242, ${0.35 * kPill})` : 'none';
       const c1 = [248, 250, 252], c2 = [3, 174, 242];
       bg.style.backgroundColor = `rgb(${c1.map((v, i) => Math.round(L(v, c2[i], kColor))).join(',')})`;
       bg.style.backgroundImage = 'none';
@@ -2939,6 +2966,7 @@ class Component extends DCLogic {
     });
 
     if (this.hintRef.current) {
+      this.hintRef.current.style.display = 'flex';
       this.hintRef.current.style.opacity = 1 - seg(0, 0.05);
     }
 
