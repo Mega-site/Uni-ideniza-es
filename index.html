@@ -28,6 +28,13 @@
       <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
       <style>
+        html,
+        body {
+          overflow-x: hidden;
+          max-width: 100vw;
+          position: relative;
+        }
+
         html {
           scroll-behavior: smooth
         }
@@ -1356,6 +1363,8 @@
             height: auto !important;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden !important;
+            max-width: 100vw !important;
           }
 
           .hero-content-overlay {
@@ -1367,6 +1376,9 @@
             padding: 84px 16px 32px !important;
             z-index: 2;
             order: 1;
+            width: 100% !important;
+            max-width: 100vw !important;
+            box-sizing: border-box !important;
           }
 
           .hero-mobile-bg {
@@ -1394,7 +1406,8 @@
             left: auto !important;
             top: auto !important;
             width: 100% !important;
-            max-width: 520px;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
             height: auto !important;
             margin: 0 auto;
             transform: none !important;
@@ -1483,8 +1496,9 @@
             order: 3;
             flex: none !important;
             width: 100% !important;
+            max-width: 100% !important;
             box-sizing: border-box !important;
-            padding: 24px 18px !important;
+            padding: 20px 16px !important;
             border-radius: 20px !important;
             gap: 12px !important;
           }
@@ -1502,6 +1516,7 @@
             padding: 0 14px !important;
             box-sizing: border-box !important;
             width: 100% !important;
+            max-width: 100% !important;
           }
 
           .custom-dropdown-trigger {
@@ -1519,12 +1534,20 @@
           }
 
           #avaliacao button[type="submit"] {
-            height: 54px !important;
-            padding: 0 16px !important;
+            height: auto !important;
+            min-height: 52px !important;
+            padding: 10px 14px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
           }
 
           #avaliacao button[type="submit"] .shiny-cta-content {
-            font-size: 15px !important;
+            font-size: 14.5px !important;
+            line-height: 1.28 !important;
+            white-space: normal !important;
+            text-align: center !important;
+            justify-content: center !important;
+            word-break: break-word !important;
           }
 
           .hero-hint {
@@ -1555,7 +1578,7 @@
           .hero-morph-track {
             position: relative !important;
             inset: auto !important;
-            height: 125vh !important;
+            height: 100vh !important;
             width: 100%;
             order: 2;
             z-index: 1;
@@ -1568,10 +1591,14 @@
             height: 100vh !important;
             width: 100%;
             overflow: hidden;
+            will-change: transform;
+            transform: translateZ(0);
           }
 
           .hero-stage {
             top: calc(50% + 24px) !important;
+            will-change: transform;
+            transform: translateZ(0);
           }
 
           /* Seção Direitos */
@@ -1778,25 +1805,10 @@
           <div ref="{{ videoRef }}" class="video-case-card hero-video-card"
             style="position:absolute;left:298px;top:123px;width:454px;height:763px;display:flex;flex-direction:column;border-radius:22px;box-shadow:0 24px 56px -20px rgba(11,39,78,0.16)">
             <div class="video-case-media" style="flex:1;aspect-ratio:auto">
-              <sc-if value="{{ notPlayingHero }}">
-                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playHero }}"
-                  aria-label="Reproduzir vídeo Uni Indeniza">
-                  <img src="https://i.ytimg.com/vi/JUmf_ULGtvY/hqdefault.jpg" alt="Uni Indeniza"
-                    class="video-case-thumb">
-                  <span class="video-case-play">
-                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
-                      style="margin-left:3px">
-                      <path d="M8 5v14l11-7z"></path>
-                    </svg>
-                  </span>
-                </button>
-              </sc-if>
-              <sc-if value="{{ isPlayingHero }}">
-                <iframe src="https://www.youtube-nocookie.com/embed/JUmf_ULGtvY?autoplay=1&rel=0&modestbranding=1" title="Uni Indeniza"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
-              </sc-if>
+              <iframe src="https://www.youtube-nocookie.com/embed/JUmf_ULGtvY?rel=0&modestbranding=1" title="Uni Indeniza"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
             </div>
             <div class="video-case-body" style="padding:20px 22px 22px;gap:10px">
               <div class="video-case-stars" aria-label="5 estrelas">
@@ -1940,9 +1952,9 @@
                 </span>
               </label>
 
-              <button type="submit" class="shiny-cta-white" style="width:100%;height:56px;margin-top:4px"><span
-                  class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content">Solicitar avaliação
-                  gratuita com especialista</span></button>
+              <button type="submit" class="shiny-cta-white" style="width:100%;max-width:100%;min-height:54px;margin-top:4px"><span
+                  class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content" style="max-width:100%">Solicitar avaliação
+                  com especialista</span></button>
               <div style="font-size:12px;line-height:1.5;color:#64748B">Nossa <a
                   href="https://atendimento.uniassessoriaseguros.com.br/politica-de-privacidade" target="_blank"
                   style="color:#475569;text-decoration:underline">Política de Privacidade</a> protege seus
@@ -2838,14 +2850,27 @@ class Component extends DCLogic {
     if (parent) parent.classList.toggle('is-active', !!(active && active.dataset.service));
   }
   componentDidMount() {
-    this.tick = () => { this.raf = null; this.update(); this.updateNav(); };
-    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(this.tick); };
+    this.tick = () => {
+      this.raf = null;
+      this.update();
+    };
+    this.onScroll = () => {
+      if (!this.raf) this.raf = requestAnimationFrame(this.tick);
+      if (!this.navTimer) {
+        this.navTimer = setTimeout(() => {
+          this.navTimer = null;
+          this.updateNav();
+        }, 120);
+      }
+    };
     window.addEventListener('scroll', this.onScroll, { passive: true });
     window.addEventListener('resize', this.onScroll);
     this.update();
+    this.updateNav();
   }
   componentDidUpdate() { this.update(); }
   componentWillUnmount() {
+    if (this.navTimer) clearTimeout(this.navTimer);
     window.removeEventListener('scroll', this.onScroll);
     window.removeEventListener('resize', this.onScroll);
   }
@@ -2897,12 +2922,12 @@ class Component extends DCLogic {
       const oy = (vh / s - 1080) / 2;
       st.style.transform = `translate(-50%,-50%) scale(${s})`;
 
-      const kPill = seg(0.04, 0.30);
-      const kColor = seg(0.08, 0.36);
-      const kDown = seg(0.30, 0.50);
-      const kU = seg(0.50, 0.68);
-      const kSwap = seg(0.68, 0.78);
-      const kUni = seg(0.78, 0.94);
+      const kPill = seg(0.00, 0.22);
+      const kColor = seg(0.04, 0.28);
+      const kDown = seg(0.22, 0.44);
+      const kU = seg(0.44, 0.64);
+      const kSwap = seg(0.64, 0.74);
+      const kUni = seg(0.74, 0.90);
 
       const left = L(-ox, 761, kPill);
       const width = L(1920 + 2 * ox, 210, kPill);
@@ -2915,7 +2940,6 @@ class Component extends DCLogic {
       bg.style.top = top + 'px';
       bg.style.height = Math.max(0, bottom - top) + 'px';
       bg.style.borderRadius = `${rad}px`;
-      bg.style.boxShadow = kPill > 0.1 ? `0 24px 50px -10px rgba(3, 174, 242, ${0.35 * kPill})` : 'none';
       const c1 = [248, 250, 252], c2 = [3, 174, 242];
       bg.style.backgroundColor = `rgb(${c1.map((v, i) => Math.round(L(v, c2[i], kColor))).join(',')})`;
       bg.style.backgroundImage = 'none';
