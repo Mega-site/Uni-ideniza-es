@@ -1,0 +1,3161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNI Indenizações | Assessoria Especializada em Seguros</title>
+  <meta name="description"
+    content="Sofreu um acidente? Saiba se você tem direito a receber até R$ 100 mil de indenização de seguros DPVAT, RCF, iFood, transporte por aplicativo e auxílios.">
+  <script>
+    window.__resources = {
+      "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "./assets/js/react.production.min.js",
+      "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "./assets/js/react-dom.production.min.js"
+    };
+  </script>
+  <script src="./assets/js/react.production.min.js"></script>
+  <script src="./assets/js/react-dom.production.min.js"></script>
+  <script src="./assets/js/dc-runtime.js"></script>
+</head>
+
+<body>
+  <x-dc>
+
+    <helmet>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+      <style>
+        html {
+          scroll-behavior: smooth
+        }
+
+        .navtrack::-webkit-scrollbar {
+          display: none
+        }
+
+        .nav-menu {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          margin-left: auto
+        }
+
+        .nav-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 5px;
+          height: 36px;
+          padding: 0 14px;
+          border-radius: 999px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #475569;
+          text-decoration: none;
+          white-space: nowrap;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          font-family: inherit;
+          transition: color .2s, background-color .2s
+        }
+
+        .nav-link:hover,
+        .nav-link.is-active {
+          color: #0B274E;
+          background: rgba(11, 39, 78, 0.05)
+        }
+
+        .nav-link.is-active {
+          font-weight: 600
+        }
+
+        .nav-dropdown {
+          position: relative;
+          display: inline-flex;
+          align-items: center
+        }
+
+        .nav-chevron {
+          transition: transform .2s ease
+        }
+
+        .nav-dropdown:hover .nav-chevron,
+        .nav-dropdown:focus-within .nav-chevron {
+          transform: rotate(180deg)
+        }
+
+        .nav-dropdown-panel {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          padding-top: 8px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(6px);
+          transition: opacity .18s ease, transform .18s ease, visibility .18s;
+          z-index: 20
+        }
+
+        .nav-dropdown:hover .nav-dropdown-panel,
+        .nav-dropdown:focus-within .nav-dropdown-panel {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0)
+        }
+
+        .nav-dropdown-menu {
+          min-width: 220px;
+          padding: 6px;
+          border-radius: 14px;
+          background: rgba(255, 255, 255, 0.98);
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+          border: 1px solid rgba(11, 39, 78, 0.08);
+          box-shadow: 0 16px 36px -10px rgba(11, 39, 78, 0.16);
+          display: flex;
+          flex-direction: column;
+          gap: 2px
+        }
+
+        .nav-dropdown-item {
+          display: flex;
+          align-items: center;
+          padding: 9px 12px;
+          border-radius: 9px;
+          font-size: 13.5px;
+          font-weight: 500;
+          color: #334155;
+          text-decoration: none;
+          white-space: nowrap;
+          transition: color .15s, background-color .15s
+        }
+
+        .nav-dropdown-item:hover,
+        .nav-dropdown-item.is-active {
+          color: #0B274E;
+          background: #F2F7FB
+        }
+
+        .nav-dropdown-item.is-active {
+          font-weight: 600;
+          color: #03AEF2
+        }
+
+        @media (max-width:768px) {
+          .nav-menu {
+            display: none
+          }
+        }
+
+        .dot-grid {
+          position: fixed;
+          inset: 0;
+          z-index: -1;
+          pointer-events: none;
+          background-image: radial-gradient(circle, rgba(23, 23, 23, 0.07) 0.85px, transparent 1.2px);
+          background-size: 24px 24px
+        }
+
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          background-color: #fafafa;
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+          color: #0B274E
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+          font-weight: 600;
+          letter-spacing: -0.025em
+        }
+
+        .eyebrow {
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #64748B;
+          display: block;
+          margin-bottom: 10px
+        }
+
+        @keyframes subtle-text-flash {
+
+          0%,
+          75% {
+            background-position: 240% 0;
+            filter: brightness(1);
+          }
+
+          88% {
+            filter: brightness(1.08);
+          }
+
+          100% {
+            background-position: -140% 0;
+            filter: brightness(1);
+          }
+        }
+
+        .text-highlight {
+          color: #03AEF2;
+          display: inline;
+          -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+          background: linear-gradient(110deg, #03AEF2 30%, #35c0f8 46%, #7de2ff 50%, #35c0f8 54%, #03AEF2 70%);
+          background-size: 250% 100%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: subtle-text-flash 7.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+        }
+
+        @property --gradient-angle {
+          syntax: "<angle>";
+          initial-value: 0deg;
+          inherits: false;
+        }
+
+        @keyframes border-spin {
+          to {
+            --gradient-angle: 360deg;
+          }
+        }
+
+        .shiny-cta {
+          --gradient-angle: 0deg;
+          --gradient-angle-offset: 0deg;
+          color: #fff;
+          background: linear-gradient(#0E3060, #071933) padding-box, conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)), transparent 0%, #0284C7 5%, #03AEF2 15%, #0284C7 30%, transparent 40%, transparent 100%) border-box;
+          isolation: isolate;
+          z-index: 1;
+          border: 1.5px solid transparent;
+          border-radius: 9999px;
+          transition: box-shadow .3s, transform .3s;
+          animation: 2.5s linear infinite border-spin;
+          position: relative;
+          overflow: hidden;
+          box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.25), inset 0 -2px 6px rgba(0, 0, 0, 0.3), 0 12px 28px -8px rgba(7, 25, 51, 0.6), 0 0 20px rgba(3, 174, 242, 0.25);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          text-decoration: none;
+          padding: 16px 38px;
+          outline: none;
+        }
+
+        .shiny-cta:hover {
+          background: linear-gradient(#143d78, #0B274E) padding-box, conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)), transparent 0%, #0284C7 5%, #03AEF2 15%, #0284C7 30%, transparent 40%, transparent 100%) border-box;
+          box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 -2px 6px rgba(0, 0, 0, 0.4), 0 16px 36px -8px rgba(3, 174, 242, 0.55), 0 0 25px rgba(3, 174, 242, 0.4);
+          transform: translateY(-2px);
+        }
+
+        .shiny-cta:active {
+          transform: translateY(1px);
+        }
+
+        .shiny-cta-white {
+          --gradient-angle: 0deg;
+          --gradient-angle-offset: 0deg;
+          color: #0B274E;
+          background: linear-gradient(#ffffff, #f8fafc) padding-box, conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)), rgba(3, 174, 242, 0.2) 0%, #0284C7 5%, #03AEF2 15%, #0284C7 30%, rgba(3, 174, 242, 0.2) 40%, rgba(3, 174, 242, 0.2) 100%) border-box;
+          isolation: isolate;
+          z-index: 1;
+          border: 1.5px solid transparent;
+          border-radius: 9999px;
+          transition: box-shadow .3s, transform .3s;
+          animation: 2.5s linear infinite border-spin;
+          position: relative;
+          overflow: hidden;
+          box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9), inset 0 -2px 6px rgba(11, 39, 78, 0.04), 0 8px 22px -6px rgba(11, 39, 78, 0.14), 0 0 18px rgba(3, 174, 242, 0.22);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          text-decoration: none;
+          padding: 16px 32px;
+          outline: none;
+        }
+
+        .shiny-cta-white:hover {
+          background: linear-gradient(#ffffff, #ffffff) padding-box, conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)), rgba(3, 174, 242, 0.35) 0%, #0284C7 5%, #03AEF2 15%, #0284C7 30%, rgba(3, 174, 242, 0.35) 40%, rgba(3, 174, 242, 0.35) 100%) border-box;
+          box-shadow: inset 0 1px 1px rgba(255, 255, 255, 1), inset 0 -2px 6px rgba(11, 39, 78, 0.06), 0 14px 28px -8px rgba(3, 174, 242, 0.38), 0 0 24px rgba(3, 174, 242, 0.32);
+          transform: translateY(-2px);
+        }
+
+        .shiny-cta-white:active {
+          transform: translateY(1px);
+        }
+
+        .shiny-cta-white .shiny-cta-content {
+          color: #0B274E;
+        }
+
+        .shiny-cta-nav {
+          padding: 9px 18px;
+        }
+
+        .shiny-cta-nav .shiny-cta-content {
+          font-size: 13.5px;
+          gap: 7px;
+        }
+
+        .video-case-card {
+          position: relative;
+          border-radius: 18px;
+          overflow: hidden;
+          background: #ffffff;
+          border: 1px solid rgba(11, 39, 78, 0.08);
+          box-shadow: 0 24px 52px -22px rgba(3, 80, 120, 0.25);
+        }
+
+        .video-case-media {
+          position: relative;
+          aspect-ratio: 16/10;
+          background: #0B274E;
+          overflow: hidden;
+        }
+
+        .video-case-trigger {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          border: none;
+          padding: 0;
+          margin: 0;
+          background: #0B274E;
+          cursor: pointer;
+          display: block;
+        }
+
+        .video-case-thumb {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          transition: transform .4s ease, filter .3s ease;
+        }
+
+        .video-case-trigger:hover .video-case-thumb {
+          transform: scale(1.03);
+          filter: brightness(0.92);
+        }
+
+        .video-case-play {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+          background: #ffffff;
+          color: #03AEF2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 12px 28px rgba(11, 39, 78, 0.28);
+          transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        .video-case-trigger:hover .video-case-play {
+          transform: translate(-50%, -50%) scale(1.08);
+          box-shadow: 0 16px 34px rgba(3, 174, 242, 0.36);
+        }
+
+        .video-case-body {
+          background-color: #ffffff;
+          background-image: radial-gradient(circle, rgba(3, 174, 242, 0.14) 1px, transparent 1px);
+          background-size: 16px 16px;
+          padding: 22px 24px 24px;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          border-top: 1px solid rgba(11, 39, 78, 0.06);
+        }
+
+        .video-case-stars {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          color: #03AEF2;
+        }
+
+        .video-case-quote {
+          margin: 0;
+          font-size: 15.5px;
+          line-height: 1.5;
+          color: #475569;
+        }
+
+        .video-case-quote strong {
+          color: #0B274E;
+          font-weight: 700;
+        }
+
+        .video-case-footer {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-top: 4px;
+        }
+
+        .video-case-avatar {
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+          object-fit: contain;
+          background: #ffffff;
+          padding: 4px;
+          border: 2px solid #E0F2FE;
+          box-shadow: 0 2px 6px rgba(11, 39, 78, 0.08);
+          flex: none;
+        }
+
+        .video-case-meta {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          min-width: 0;
+        }
+
+        .video-case-name-row {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 14.5px;
+          font-weight: 700;
+          color: #0B274E;
+        }
+
+        .video-case-role {
+          font-size: 13px;
+          color: #64748B;
+        }
+
+        .service-section {
+          scroll-margin-top: 88px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: clamp(40px, 6vw, 88px);
+          align-items: center;
+          padding: clamp(56px, 7vw, 96px) 0;
+        }
+
+        .service-section--reverse {
+          flex-direction: row-reverse;
+        }
+
+        .service-content {
+          flex: 1 1 360px;
+          min-width: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+        }
+
+        .service-eyebrow {
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.16em;
+          text-transform: uppercase;
+          color: #64748B;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+
+        .service-title {
+          margin: 0;
+          font-size: clamp(28px, 3vw, 40px);
+          font-weight: 600;
+          letter-spacing: -0.03em;
+          line-height: 1.14;
+          color: #0B274E;
+        }
+
+        .service-accent {
+          color: #03AEF2;
+        }
+
+        .service-lead {
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.65;
+          color: #475569;
+          max-width: 52ch;
+        }
+
+        .service-list {
+          list-style: none;
+          margin: 2px 0 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .service-list li {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          font-size: 14.5px;
+          line-height: 1.5;
+          color: #334155;
+        }
+
+        .service-list svg {
+          flex: none;
+          margin-top: 2px;
+          color: #03AEF2;
+        }
+
+        .service-trust {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 8px 14px;
+          font-size: 13px;
+          font-weight: 500;
+          color: #64748B;
+          padding-top: 4px;
+        }
+
+        .service-trust-item {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+
+        .service-cta-wrap {
+          padding-top: 6px;
+          display: flex;
+          align-items: flex-start;
+        }
+
+        .service-media {
+          flex: 1.15 1 400px;
+          min-width: 0;
+        }
+
+        .service-image-frame {
+          position: relative;
+          aspect-ratio: 16/10;
+          border-radius: 20px;
+          overflow: hidden;
+          background: #F1F5F9;
+          border: 1px solid rgba(11, 39, 78, 0.08);
+          box-shadow: 0 20px 44px -18px rgba(11, 39, 78, 0.14);
+        }
+
+        .service-image-frame img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+
+        .hero-waves {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          border-radius: inherit;
+          will-change: opacity;
+          background:
+            linear-gradient(128deg, rgba(255, 255, 255, 0) 63%, rgba(255, 255, 255, 0.35) 63.4%, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 78%),
+            radial-gradient(110% 92% at 42% 22%, #ffffff 0%, #ffffff 58%, rgba(255, 255, 255, 0.92) 66%, rgba(248, 252, 255, 0.6) 74%, rgba(255, 255, 255, 0) 84%),
+            linear-gradient(135deg, rgba(56, 189, 248, 0) 58%, rgba(56, 189, 248, 0.14) 80%, rgba(3, 174, 242, 0.26) 100%),
+            radial-gradient(60% 38% at 6% 96%, rgba(3, 174, 242, 0.22) 0%, rgba(3, 174, 242, 0) 70%),
+            linear-gradient(180deg, #F5FBFF 0%, #EAF6FE 45%, #D6EFFD 72%, #BAE6FD 90%, #9DDCFB 100%);
+        }
+
+        /* ===== Órbita de aplicativos ===== */
+        .orbit-frame {
+          container-type: size;
+          aspect-ratio: 1 / 1;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          background: none;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          overflow: visible;
+        }
+
+        .orbit-glow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 70cqh;
+          height: 70cqh;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(3, 174, 242, 0.16) 0%, rgba(3, 174, 242, 0) 65%);
+          pointer-events: none;
+        }
+
+        .orbit-ring {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+
+        .orbit-ring--inner {
+          width: 52cqh;
+          height: 52cqh;
+          border: 1px solid rgba(3, 174, 242, 0.22);
+        }
+
+        .orbit-ring--outer {
+          width: 84cqh;
+          height: 84cqh;
+          border: 1px dashed rgba(11, 39, 78, 0.12);
+        }
+
+        .orbit {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 0;
+          height: 0;
+          --r: 26cqh;
+          --dur: 30s;
+          animation: orbit-spin var(--dur) linear infinite;
+        }
+
+        .orbit--outer {
+          --r: 42cqh;
+          --dur: 46s;
+          animation-direction: reverse;
+        }
+
+        .orbit-item {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: rotate(var(--a)) translateX(var(--r)) rotate(calc(-1 * var(--a)));
+        }
+
+        .orbit-a0 { --a: 0deg; }
+        .orbit-a60 { --a: 60deg; }
+        .orbit-a120 { --a: 120deg; }
+        .orbit-a180 { --a: 180deg; }
+        .orbit-a240 { --a: 240deg; }
+        .orbit-a300 { --a: 300deg; }
+
+        .orbit-pos {
+          transform: translate(-50%, -50%);
+        }
+
+        .orbit-chip {
+          display: inline-flex;
+          align-items: baseline;
+          justify-content: center;
+          gap: 0.35em;
+          white-space: nowrap;
+          padding: 0 1.15em;
+          height: clamp(30px, 11cqh, 52px);
+          align-items: center;
+          border-radius: 999px;
+          background: #ffffff;
+          border: 1px solid rgba(11, 39, 78, 0.08);
+          box-shadow: 0 10px 24px -10px rgba(11, 39, 78, 0.22), 0 2px 6px rgba(11, 39, 78, 0.05);
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: clamp(12px, 4.4cqh, 21px);
+          line-height: 1;
+          animation: orbit-spin var(--dur) linear infinite reverse;
+          transition: box-shadow .25s ease;
+        }
+
+        .orbit--outer .orbit-chip {
+          animation-direction: normal;
+        }
+
+        .orbit-chip b {
+          font-weight: 800;
+        }
+
+        .orbit-chip small {
+          font-size: 0.55em;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+
+        .orbit-chip--square {
+          width: clamp(30px, 11cqh, 52px);
+          padding: 0;
+          border-radius: 28%;
+        }
+
+        .orbit-center {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 30cqh;
+          height: 30cqh;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+        }
+
+        .orbit-core {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: #ffffff;
+          border: 1px solid rgba(3, 174, 242, 0.18);
+          box-shadow: 0 18px 40px -14px rgba(3, 120, 180, 0.35), inset 0 -6px 14px rgba(3, 174, 242, 0.06);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: orbit-float 5s ease-in-out infinite;
+        }
+
+        .orbit-core img {
+          width: 64%;
+          height: auto;
+          display: block;
+        }
+
+        .orbit-pulse {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          border: 1.5px solid rgba(3, 174, 242, 0.35);
+          animation: orbit-pulse 3.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+          pointer-events: none;
+        }
+
+        .orbit-pulse--delay {
+          animation-delay: 1.6s;
+        }
+
+        .orbit-frame:hover .orbit,
+        .orbit-frame:hover .orbit-chip {
+          animation-play-state: paused;
+        }
+
+        @keyframes orbit-spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes orbit-pulse {
+          0% {
+            transform: scale(1);
+            opacity: 0.9;
+          }
+          100% {
+            transform: scale(1.75);
+            opacity: 0;
+          }
+        }
+
+        @keyframes orbit-float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-4px);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .orbit, .orbit-chip, .orbit-pulse, .orbit-core {
+            animation: none !important;
+          }
+        }
+
+        /* ===== Órbita de aplicativos ===== */
+        .orbit-frame {
+          container-type: size;
+          aspect-ratio: 1 / 1;
+          width: 100%;
+          max-width: 600px;
+          margin: 0 auto;
+          background: none;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          overflow: visible;
+        }
+
+        .orbit-glow {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 70cqh;
+          height: 70cqh;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(3, 174, 242, 0.16) 0%, rgba(3, 174, 242, 0) 65%);
+          pointer-events: none;
+        }
+
+        .orbit-ring {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          pointer-events: none;
+        }
+
+        .orbit-ring--inner {
+          width: 52cqh;
+          height: 52cqh;
+          border: 1px solid rgba(3, 174, 242, 0.22);
+        }
+
+        .orbit-ring--outer {
+          width: 84cqh;
+          height: 84cqh;
+          border: 1px dashed rgba(11, 39, 78, 0.12);
+        }
+
+        .orbit {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 0;
+          height: 0;
+          --r: 26cqh;
+          --dur: 30s;
+          animation: orbit-spin var(--dur) linear infinite;
+        }
+
+        .orbit--outer {
+          --r: 42cqh;
+          --dur: 46s;
+          animation-direction: reverse;
+        }
+
+        .orbit-item {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: rotate(var(--a)) translateX(var(--r)) rotate(calc(-1 * var(--a)));
+        }
+
+        .orbit-pos {
+          transform: translate(-50%, -50%);
+        }
+
+        .orbit-chip {
+          display: inline-flex;
+          align-items: baseline;
+          justify-content: center;
+          gap: 0.35em;
+          white-space: nowrap;
+          padding: 0 1.15em;
+          height: clamp(30px, 11cqh, 52px);
+          align-items: center;
+          border-radius: 999px;
+          background: #ffffff;
+          border: 1px solid rgba(11, 39, 78, 0.08);
+          box-shadow: 0 10px 24px -10px rgba(11, 39, 78, 0.22), 0 2px 6px rgba(11, 39, 78, 0.05);
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: clamp(12px, 4.4cqh, 21px);
+          line-height: 1;
+          animation: orbit-spin var(--dur) linear infinite reverse;
+          transition: box-shadow .25s ease;
+        }
+
+        .orbit--outer .orbit-chip {
+          animation-direction: normal;
+        }
+
+        .orbit-chip b {
+          font-weight: 800;
+        }
+
+        .orbit-chip small {
+          font-size: 0.55em;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+
+        .orbit-chip--square {
+          width: clamp(30px, 11cqh, 52px);
+          padding: 0;
+          border-radius: 28%;
+        }
+
+        .orbit-center {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 30cqh;
+          height: 30cqh;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+        }
+
+        .orbit-core {
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: #ffffff;
+          border: 1px solid rgba(3, 174, 242, 0.18);
+          box-shadow: 0 18px 40px -14px rgba(3, 120, 180, 0.35), inset 0 -6px 14px rgba(3, 174, 242, 0.06);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          animation: orbit-float 5s ease-in-out infinite;
+        }
+
+        .orbit-core img {
+          width: 64%;
+          height: auto;
+          display: block;
+        }
+
+        .orbit-pulse {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          border: 1.5px solid rgba(3, 174, 242, 0.35);
+          animation: orbit-pulse 3.2s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+          pointer-events: none;
+        }
+
+        .orbit-pulse--delay {
+          animation-delay: 1.6s;
+        }
+
+        .orbit-frame:hover .orbit,
+        .orbit-frame:hover .orbit-chip {
+          animation-play-state: paused;
+        }
+
+        @keyframes orbit-spin {
+          to {
+            transform: rotate(360deg);
+          }
+        }
+
+        @keyframes orbit-pulse {
+          0% {
+            transform: scale(1);
+            opacity: 0.9;
+          }
+          100% {
+            transform: scale(1.75);
+            opacity: 0;
+          }
+        }
+
+        @keyframes orbit-float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-4px);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          .orbit, .orbit-chip, .orbit-pulse, .orbit-core {
+            animation: none !important;
+          }
+        }
+
+        .shiny-dots {
+          z-index: 1;
+          pointer-events: none;
+          border-radius: inherit;
+          --dots-mask: linear-gradient(125deg, transparent 54%, #000000d9 66%, #000000d9 74%, transparent 85%);
+          -webkit-mask-image: var(--dots-mask);
+          mask-image: var(--dots-mask);
+          background-size: 4px 4px;
+          position: absolute;
+          inset: 0;
+          background-image: radial-gradient(circle at .5px .5px, rgba(3, 174, 242, 0.75) .5px, transparent 0);
+        }
+
+        .shiny-cta-content {
+          z-index: 2;
+          border-radius: 9999px;
+          justify-content: center;
+          align-items: center;
+          gap: .65rem;
+          display: inline-flex;
+          position: relative;
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+          color: #fff;
+        }
+
+        /* Custom Modern Select Dropdown */
+        .custom-dropdown-wrap {
+          position: relative;
+          width: 100%;
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .custom-dropdown-trigger {
+          width: 100%;
+          height: 52px;
+          border: 1px solid #E2E8F0;
+          background: #F8FAFC;
+          border-radius: 12px;
+          padding: 0 16px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          user-select: none;
+          outline: none;
+          transition: border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+          box-sizing: border-box;
+        }
+
+        .custom-dropdown-trigger:hover {
+          border-color: #CBD5E1;
+          background: #FFFFFF;
+        }
+
+        .custom-dropdown-trigger:focus-visible,
+        .custom-dropdown-wrap.is-open .custom-dropdown-trigger {
+          border-color: #03AEF2;
+          background: #FFFFFF;
+          box-shadow: 0 0 0 3.5px rgba(3, 174, 242, 0.16);
+        }
+
+        .custom-dropdown-label {
+          font-size: 15px;
+          font-weight: 550;
+          color: #0B274E;
+          letter-spacing: -0.01em;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transition: color 0.15s ease;
+        }
+
+        .custom-dropdown-label.placeholder {
+          color: #94A3B8;
+          font-weight: 500;
+        }
+
+        .custom-dropdown-chevron {
+          flex-shrink: 0;
+          transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.2s ease;
+        }
+
+        .custom-dropdown-wrap.is-open .custom-dropdown-chevron {
+          transform: rotate(180deg);
+          stroke: #03AEF2;
+        }
+
+        .custom-dropdown-menu {
+          position: absolute;
+          top: calc(100% + 8px);
+          left: 0;
+          right: 0;
+          z-index: 999;
+          background: #FFFFFF;
+          border: 1px solid rgba(11, 39, 78, 0.08);
+          border-radius: 14px;
+          box-shadow: 0 20px 45px -10px rgba(11, 39, 78, 0.18), 0 8px 18px -4px rgba(11, 39, 78, 0.08);
+          padding: 6px;
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-8px) scale(0.98);
+          pointer-events: none;
+          transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s ease;
+          box-sizing: border-box;
+        }
+
+        .custom-dropdown-wrap.is-open .custom-dropdown-menu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0) scale(1);
+          pointer-events: auto;
+        }
+
+        .custom-dropdown-option {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 11px 14px;
+          border-radius: 9px;
+          cursor: pointer;
+          font-size: 14.5px;
+          font-weight: 500;
+          color: #1E293B;
+          user-select: none;
+          transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+        }
+
+        .custom-dropdown-option:hover {
+          background-color: #F0F9FF;
+          color: #0284C7;
+          transform: translateX(2px);
+        }
+
+        .custom-dropdown-option.is-placeholder {
+          color: #64748B;
+          font-size: 14px;
+          border-bottom: 1px solid #F1F5F9;
+          margin-bottom: 4px;
+          padding-bottom: 10px;
+          border-radius: 9px 9px 4px 4px;
+        }
+
+        .custom-dropdown-option.is-placeholder:hover {
+          background-color: #F8FAFC;
+          color: #0B274E;
+          transform: none;
+        }
+
+        .custom-dropdown-option.is-selected {
+          background-color: #E0F2FE;
+          color: #0369A1;
+          font-weight: 600;
+        }
+
+        .custom-dropdown-option .option-check {
+          display: none;
+          flex-shrink: 0;
+          margin-left: 8px;
+        }
+
+        .custom-dropdown-option.is-selected .option-check {
+          display: block;
+        }
+
+
+        /* Cookie Banner (LGPD) */
+        .uni-cookie-banner {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 99999;
+          background: rgba(10, 28, 56, 0.94);
+          backdrop-filter: blur(14px);
+          -webkit-backdrop-filter: blur(14px);
+          border-top: 1px solid rgba(255, 255, 255, 0.12);
+          box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.25);
+          padding: 16px 24px;
+          transform: translateY(100%);
+          opacity: 0;
+          visibility: hidden;
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.4s;
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .uni-cookie-banner.is-visible {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+        }
+
+        .uni-cookie-inner {
+          max-width: 1240px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        .uni-cookie-text {
+          font-size: 14px;
+          line-height: 1.5;
+          color: #E2E8F0;
+          margin: 0;
+          flex: 1;
+          min-width: 280px;
+        }
+
+        .uni-cookie-link {
+          color: #03AEF2;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+          transition: color 0.2s ease;
+        }
+
+        .uni-cookie-link:hover {
+          color: #38BDF8;
+        }
+
+        .uni-cookie-btn {
+          background: #03AEF2;
+          color: #FFFFFF;
+          border: none;
+          border-radius: 9px;
+          padding: 11px 24px;
+          font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          letter-spacing: -0.01em;
+          cursor: pointer;
+          white-space: nowrap;
+          transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+          box-shadow: 0 4px 14px rgba(3, 174, 242, 0.3);
+        }
+
+        .uni-cookie-btn:hover {
+          background: #0284C7;
+          transform: translateY(-1px);
+          box-shadow: 0 6px 18px rgba(3, 174, 242, 0.4);
+        }
+
+        .uni-cookie-btn:active {
+          transform: translateY(0);
+        }
+
+        @media (max-width: 640px) {
+          .uni-cookie-banner {
+            padding: 14px 18px;
+          }
+          .uni-cookie-inner {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 12px;
+          }
+          .uni-cookie-text {
+            font-size: 13px;
+            text-align: center;
+          }
+          .uni-cookie-btn {
+            width: 100%;
+            text-align: center;
+            padding: 12px 20px;
+          }
+        }
+
+
+        /* === HERO 2-LAYER ARCHITECTURE (DESKTOP & MOBILE) === */
+        .hero-wrapper {
+          position: relative;
+          height: 450vh;
+          background: transparent;
+        }
+
+        .hero-morph-track {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+        }
+
+        .hero-sticky-stage {
+          position: sticky;
+          top: 0;
+          height: 100vh;
+          width: 100%;
+          overflow: hidden;
+        }
+
+        .hero-stage {
+          position: absolute;
+          left: 50%;
+          top: calc(50% + 34px);
+          width: 1920px;
+          height: 1080px;
+          transform-origin: center center;
+          transform: translate(-50%, -50%) scale(0.5);
+          will-change: transform;
+        }
+
+        .hero-content-overlay {
+          position: sticky;
+          top: 0;
+          height: 100vh;
+          width: 100%;
+          overflow: hidden;
+          z-index: 2;
+          pointer-events: none;
+        }
+
+        .hero-content-stage {
+          position: absolute;
+          left: 50%;
+          top: calc(50% + 34px);
+          width: 1920px;
+          height: 1080px;
+          transform-origin: center center;
+          transform: translate(-50%, -50%) scale(0.5);
+          pointer-events: none;
+          will-change: transform;
+        }
+
+        .hero-video-card,
+        .hero-form-col {
+          pointer-events: auto;
+        }
+
+        .hero-mobile-bg {
+          display: none;
+        }
+
+        .hero-mobile-scroll-cue {
+          display: none;
+        }
+
+        /* === MOBILE & TABLET RESPONSIVE OPTIMIZATIONS === */
+        @media (max-width: 900px) {
+          /* Navbar principal isolada (.site-nav não afeta o nav do footer) */
+          .site-nav {
+            height: 60px !important;
+            padding: 0 16px !important;
+            gap: 12px !important;
+          }
+          .site-nav .nav-menu {
+            display: none !important;
+          }
+          .site-nav img {
+            height: 32px !important;
+          }
+          .shiny-cta-nav {
+            padding: 8px 14px !important;
+            font-size: 13px !important;
+          }
+
+          /* Hero Mobile Nativa: 100% Largura, Fontes Reais (Zero scale() no conteúdo) */
+          .hero-wrapper {
+            height: auto !important;
+            display: flex;
+            flex-direction: column;
+          }
+
+          .hero-content-overlay {
+            position: relative !important;
+            top: auto !important;
+            height: auto !important;
+            overflow: visible !important;
+            pointer-events: auto !important;
+            padding: 84px 16px 32px !important;
+            z-index: 2;
+            order: 1;
+          }
+
+          .hero-mobile-bg {
+            display: block !important;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background:
+              radial-gradient(120% 55% at 50% 0%, #FFFFFF 0%, #F5FBFF 55%, #EBF6FE 100%);
+          }
+
+          .hero-mobile-bg::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 140px;
+            background: linear-gradient(180deg, rgba(245, 251, 255, 0) 0%, #F5FBFF 100%);
+          }
+
+          .hero-content-stage {
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+            width: 100% !important;
+            max-width: 520px;
+            height: auto !important;
+            margin: 0 auto;
+            transform: none !important;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            pointer-events: auto !important;
+            z-index: 1;
+          }
+
+          /* Desembrulha formRef no mobile para ordenar: 1. Título -> 2. Vídeo Celular -> 3. Formulário */
+          .hero-form-col {
+            display: contents !important;
+          }
+
+          .hero-heading-block {
+            order: 1;
+            text-align: center;
+            align-items: center;
+            gap: 8px !important;
+            padding: 0 4px;
+          }
+
+          .hero-heading-block h1 {
+            font-size: clamp(30px, 8.5vw, 40px) !important;
+            line-height: 1.12 !important;
+          }
+
+          .hero-heading-block h2 {
+            font-size: 16px !important;
+            line-height: 1.5 !important;
+            max-width: 360px;
+          }
+
+          /* Card de Vídeo em Formato Vertical de Celular Real (9:14) */
+          .hero-video-card {
+            order: 2;
+            position: relative !important;
+            left: auto !important;
+            top: auto !important;
+            width: 100% !important;
+            max-width: 310px !important;
+            height: auto !important;
+            margin: 0 auto !important;
+            border-radius: 24px !important;
+            opacity: 1 !important;
+            transform: none !important;
+            pointer-events: auto !important;
+            box-shadow: 0 20px 44px -16px rgba(11, 39, 78, 0.2) !important;
+          }
+
+          .hero-video-card .video-case-media {
+            flex: none !important;
+            width: 100% !important;
+            aspect-ratio: 9 / 13.5 !important;
+            min-height: 0 !important;
+          }
+
+          .hero-video-card .video-case-thumb {
+            object-fit: cover !important;
+            object-position: center top !important;
+          }
+
+          .hero-video-card .video-case-play {
+            width: 58px !important;
+            height: 58px !important;
+          }
+
+          .hero-video-card .video-case-body {
+            padding: 16px 18px 18px !important;
+            gap: 8px !important;
+          }
+
+          .hero-video-card .video-case-quote {
+            font-size: 14px !important;
+            line-height: 1.45 !important;
+          }
+
+          .hero-video-card .video-case-avatar {
+            width: 38px !important;
+            height: 38px !important;
+          }
+
+          /* Card do Formulário em 100% Largura Real (Fontes 16px anti-zoom iOS) */
+          #avaliacao {
+            order: 3;
+            flex: none !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            padding: 24px 18px !important;
+            border-radius: 20px !important;
+            gap: 12px !important;
+          }
+
+          #avaliacao > div:first-child {
+            font-size: 18px !important;
+            line-height: 1.35 !important;
+          }
+
+          #avaliacao input[placeholder],
+          #avaliacao input[type="email"],
+          #avaliacao input[type="tel"] {
+            height: 50px !important;
+            font-size: 16px !important;
+            padding: 0 14px !important;
+            box-sizing: border-box !important;
+            width: 100% !important;
+          }
+
+          .custom-dropdown-trigger {
+            height: 50px !important;
+            padding: 0 14px !important;
+          }
+
+          .custom-dropdown-label {
+            font-size: 15.5px !important;
+          }
+
+          .custom-dropdown-menu {
+            max-height: 240px !important;
+            overflow-y: auto !important;
+          }
+
+          #avaliacao button[type="submit"] {
+            height: 54px !important;
+            padding: 0 16px !important;
+          }
+
+          #avaliacao button[type="submit"] .shiny-cta-content {
+            font-size: 15px !important;
+          }
+
+          .hero-hint {
+            display: none !important;
+          }
+
+          .hero-mobile-scroll-cue {
+            order: 4;
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-align: center;
+            padding-top: 6px;
+            color: #0B274E;
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          /* Trilho dedicado para o Morphing do Fundo -> Logo UNI no Mobile */
+          .hero-morph-track {
+            position: relative !important;
+            inset: auto !important;
+            height: 185vh !important;
+            width: 100%;
+            order: 2;
+            z-index: 1;
+            background: transparent;
+          }
+
+          .hero-sticky-stage {
+            position: sticky !important;
+            top: 0 !important;
+            height: 100vh !important;
+            width: 100%;
+            overflow: hidden;
+          }
+
+          .hero-stage {
+            top: calc(50% + 24px) !important;
+          }
+
+          /* Seção Direitos */
+          #direitos {
+            padding: 40px 16px 24px !important;
+            gap: 28px !important;
+          }
+
+          /* Services Sections: Stack vertically uniformly */
+          .service-section,
+          .service-section--reverse {
+            flex-direction: column !important;
+            gap: 28px !important;
+            padding: 40px 0 !important;
+          }
+          .service-content {
+            flex: none !important;
+            width: 100% !important;
+            gap: 14px !important;
+          }
+          .service-media {
+            flex: none !important;
+            width: 100% !important;
+          }
+          .service-title {
+            font-size: clamp(24px, 6.5vw, 32px) !important;
+            line-height: 1.2 !important;
+          }
+          .service-lead {
+            font-size: 15.5px !important;
+            line-height: 1.55 !important;
+          }
+          .service-trust {
+            flex-wrap: wrap !important;
+            gap: 8px !important;
+          }
+          .service-cta-wrap .shiny-cta {
+            width: 100% !important;
+            box-sizing: border-box !important;
+            padding: 14px 20px !important;
+            justify-content: center !important;
+          }
+
+          /* Orbit (Apps) on mobile: fit viewport cleanly */
+          .orbit-frame {
+            max-width: min(86vw, 320px) !important;
+            aspect-ratio: 1 / 1 !important;
+            margin: 12px auto !important;
+          }
+          .orbit-chip {
+            font-size: 12px !important;
+            height: 34px !important;
+            padding: 0 10px !important;
+          }
+
+          /* Seção Comece Agora */
+          section[data-screen-label="Comece Agora"] {
+            padding: 48px 16px !important;
+          }
+          section[data-screen-label="Comece Agora"] .shiny-cta {
+            width: 100% !important;
+            max-width: 380px !important;
+            box-sizing: border-box !important;
+            justify-content: center !important;
+          }
+
+          /* Sections: Sobre & Depoimentos */
+          #sobre {
+            padding: 48px 16px !important;
+          }
+          #sobre > div {
+            gap: 32px !important;
+          }
+          #sobre .shiny-cta {
+            width: 100% !important;
+            box-sizing: border-box !important;
+            justify-content: center !important;
+          }
+          #depoimentos {
+            padding: 48px 16px !important;
+          }
+          #depoimentos > div {
+            gap: 32px !important;
+          }
+          #depoimentos p[style*="font-size:20px"] {
+            font-size: 16.5px !important;
+            line-height: 1.6 !important;
+          }
+          #depoimentos .shiny-cta {
+            width: 100% !important;
+            box-sizing: border-box !important;
+            justify-content: center !important;
+          }
+
+          /* Global Container Padding */
+          div[style*="padding:0 24px 64px"] {
+            padding: 0 16px 40px !important;
+          }
+
+          /* Footer Mobile Clean Layout */
+          footer {
+            padding: 48px 16px 88px !important;
+          }
+          .footer-nav {
+            height: auto !important;
+            padding: 0 !important;
+            gap: 14px 20px !important;
+          }
+          .footer-legal-links {
+            flex-wrap: wrap !important;
+            row-gap: 6px !important;
+          }
+
+          /* Modais de resultado no Mobile */
+          .modal-card {
+            padding: 28px 20px !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .shiny-cta-nav {
+            padding: 8px 12px !important;
+            font-size: 12.5px !important;
+          }
+          .shiny-cta-nav .shiny-cta-content {
+            gap: 6px !important;
+          }
+          .hero-video-card {
+            max-width: 280px !important;
+          }
+          .service-title {
+            font-size: 25px !important;
+          }
+        }
+
+      </style>
+    </helmet>
+    <nav class="site-nav"
+      style="position:fixed;top:0;left:0;right:0;z-index:20;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(16px,4vw,48px);background:rgba(255,255,255,0.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(11,39,78,0.05)">
+      <a href="#" sc-camel-on-click="{{ toTopLink }}" style="display:flex;align-items:center"><img
+          src="./assets/img/logo-uni.webp" alt="UNI Assessoria e Consultoria"
+          style="height:40px;width:auto;display:block"></a>
+      <div ref="{{ navTrackRef }}" class="nav-menu">
+        <div class="nav-dropdown">
+          <a href="#seguro-ifood" data-nav-parent="servicos" class="nav-link">
+            <span>Serviços</span>
+            <svg class="nav-chevron" width="14" height="14" sc-camel-view-box="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </a>
+          <div class="nav-dropdown-panel">
+            <div class="nav-dropdown-menu">
+              <a href="#seguro-ifood" data-nav="seguro-ifood" data-service="1" class="nav-dropdown-item">Seguro
+                iFood</a>
+              <a href="#seguro-de-aplicativos" data-nav="seguro-de-aplicativos" data-service="1"
+                class="nav-dropdown-item">Seguro de Aplicativos</a>
+              <a href="#seguro-dpvat" data-nav="seguro-dpvat" data-service="1" class="nav-dropdown-item">Seguro
+                DPVAT</a>
+              <a href="#seguro-rcf-ou-seguro-para-terceiros" data-nav="seguro-rcf-ou-seguro-para-terceiros"
+                data-service="1" class="nav-dropdown-item">Seguro RCF</a>
+              <a href="#seguro-de-vida" data-nav="seguro-de-vida" data-service="1" class="nav-dropdown-item">Seguro de
+                Vida</a>
+              <a href="#auxilio-acidente" data-nav="auxilio-acidente" data-service="1"
+                class="nav-dropdown-item">Auxílio-Acidente</a>
+              <a href="#auxilio-doenca" data-nav="auxilio-doenca" data-service="1"
+                class="nav-dropdown-item">Auxílio-Doença</a>
+            </div>
+          </div>
+        </div>
+        <a href="#sobre" data-nav="sobre" class="nav-link">Quem somos</a>
+        <a href="#depoimentos" data-nav="depoimentos" class="nav-link">Depoimentos</a>
+      </div>
+      <button class="shiny-cta-white shiny-cta-nav" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots"
+          aria-hidden="true"></span><span class="shiny-cta-content"><svg width="15" height="15"
+            sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14m-6-6 6 6-6 6"></path>
+          </svg><span>Falar com Consultor</span></span></button>
+    </nav>
+    <div class="hero-wrapper" data-screen-label="Hero">
+      <!-- Camada 1: Morphing Background + Logo UNI -->
+      <div ref="{{ trackRef }}" class="hero-morph-track">
+        <div class="hero-sticky-stage">
+          <div ref="{{ stageRef }}" class="hero-stage">
+            <div ref="{{ bgRef }}"
+              style="position:absolute;left:0;top:0;width:1920px;height:1010px;background-color:#F8FAFC;border-radius:0 0 190px 190px;overflow:hidden">
+              <div ref="{{ waveRef }}" class="hero-waves" aria-hidden="true"></div>
+            </div>
+            <img ref="{{ uRef }}" src="./assets/img/u-mark.webp" alt=""
+              style="position:absolute;left:761px;top:390px;width:211px;height:258px;opacity:0">
+            <img ref="{{ uniRef }}" src="./assets/img/logo-uni.webp" alt="UNI Assessoria e Consultoria"
+              style="position:absolute;left:761px;top:390px;width:398px;height:300px;opacity:0;clip-path:inset(0 47% 0 0)">
+          </div>
+        </div>
+      </div>
+
+      <!-- Camada 2: Conteúdo Interativo (Desktop: sticky 1920x1080 | Mobile: fluxo nativo 100%) -->
+      <div class="hero-content-overlay">
+        <div class="hero-mobile-bg" aria-hidden="true"></div>
+        <div ref="{{ contentStageRef }}" class="hero-content-stage">
+          <div ref="{{ videoRef }}" class="video-case-card hero-video-card"
+            style="position:absolute;left:298px;top:123px;width:454px;height:763px;display:flex;flex-direction:column;border-radius:22px;box-shadow:0 24px 56px -20px rgba(11,39,78,0.16)">
+            <div class="video-case-media" style="flex:1;aspect-ratio:auto">
+              <sc-if value="{{ notPlayingHero }}">
+                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playHero }}"
+                  aria-label="Reproduzir vídeo Uni Indeniza">
+                  <img src="https://i.ytimg.com/vi/JUmf_ULGtvY/hqdefault.jpg" alt="Uni Indeniza"
+                    class="video-case-thumb">
+                  <span class="video-case-play">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </sc-if>
+              <sc-if value="{{ isPlayingHero }}">
+                <iframe src="https://www.youtube.com/embed/JUmf_ULGtvY?autoplay=1" title="Uni Indeniza"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+              </sc-if>
+            </div>
+            <div class="video-case-body" style="padding:20px 22px 22px;gap:10px">
+              <div class="video-case-stars" aria-label="5 estrelas">
+                <svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="15" height="15" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <p class="video-case-quote" style="font-size:15px">Mais de <strong>12.000 pessoas</strong> já receberam
+                suas indenizações com a nossa assessoria.</p>
+              <div class="video-case-footer" style="margin-top:2px">
+                <img src="./assets/img/logo-uni.webp" alt="UNI Indenizações" class="video-case-avatar">
+                <div class="video-case-meta">
+                  <div class="video-case-name-row">
+                    <span>UNI Indenizações</span>
+                    <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" fill="#03AEF2"></circle>
+                      <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="video-case-role">Assessoria Especializada em Seguros</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div ref="{{ formRef }}" class="hero-form-col"
+            style="position:absolute;left:992px;top:123px;width:628px;height:763px;display:flex;flex-direction:column;gap:24px">
+            <div class="hero-heading-block" style="display:flex;flex-direction:column;gap:10px">
+              <span
+                style="font-size:11.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#64748B;display:block;margin-bottom:4px">Assessoria
+                Especializada</span>
+              <h1
+                style="margin:0;font-size:clamp(38px,4.5vw,54px);font-weight:600;line-height:1.1;letter-spacing:-0.03em;color:#0B274E">
+                Sofreu um <span class="service-accent">acidente?</span></h1>
+              <h2
+                style="margin:0;font-size:clamp(18px,1.7vw,21px);font-weight:400;line-height:1.5;color:#475569;text-wrap:pretty">
+                Você pode ter direito a receber até <strong style="color:#0B274E;font-weight:600">R$ 100 mil</strong> de
+                indenização.</h2>
+            </div>
+            <form id="avaliacao" sc-camel-on-submit="{{ onSubmit }}"
+              style="flex:1;border-radius:20px;background:#fff;border:1px solid rgba(11,39,78,0.08);box-shadow:0 24px 56px -22px rgba(11,39,78,0.12);padding:34px 38px;display:flex;flex-direction:column;gap:14px">
+              <div style="font-size:20px;font-weight:600;letter-spacing:-0.02em;color:#0B274E;margin-bottom:4px">Faça
+                sua avaliação gratuita com um <span class="service-accent">especialista</span>
+              </div>
+              <input required="" placeholder="Nome completo da Vítima*"
+                style="height:52px;border:1px solid #E2E8F0;background:#F8FAFC;border-radius:12px;padding:0 16px;font:500 15.5px 'Geist',sans-serif;color:#0B274E;outline:none;transition:border-color .2s,background-color .2s"
+                style-focus="border-color:#03AEF2;background:#fff">
+              <input required="" type="email" placeholder="Email*"
+                style="height:52px;border:1px solid #E2E8F0;background:#F8FAFC;border-radius:12px;padding:0 16px;font:500 15.5px 'Geist',sans-serif;color:#0B274E;outline:none;transition:border-color .2s,background-color .2s"
+                style-focus="border-color:#03AEF2;background:#fff">
+              <input required="" type="tel" placeholder="Telefone*"
+                style="height:52px;border:1px solid #E2E8F0;background:#F8FAFC;border-radius:12px;padding:0 16px;font:500 15.5px 'Geist',sans-serif;color:#0B274E;outline:none;transition:border-color .2s,background-color .2s"
+                style-focus="border-color:#03AEF2;background:#fff">
+              <label style="font-size:14px;font-weight:600;color:#0B274E;margin-bottom:-6px;display:block">A vítima possui alguma lesão?*</label>
+              <div class="custom-dropdown-wrap" id="custom-dropdown-lesao">
+                <!-- Trigger Button -->
+                <button type="button" class="custom-dropdown-trigger" id="lesao-dropdown-trigger" aria-haspopup="listbox" aria-expanded="false">
+                  <span class="custom-dropdown-label placeholder" id="lesao-dropdown-label">Selecione</span>
+                  <svg class="custom-dropdown-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#64748B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+
+                <!-- Options Menu -->
+                <div class="custom-dropdown-menu" id="lesao-dropdown-menu" role="listbox" aria-labelledby="lesao-dropdown-trigger">
+                  <div class="custom-dropdown-option is-placeholder" data-value="" role="option" aria-selected="false">
+                    <span>Selecione</span>
+                  </div>
+                  <div class="custom-dropdown-option" data-value="Arranhões e Hematomas" role="option" aria-selected="false">
+                    <span class="option-text">Arranhões e Hematomas</span>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#03AEF2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-dropdown-option" data-value="Torsão" role="option" aria-selected="false">
+                    <span class="option-text">Torsão</span>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#03AEF2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-dropdown-option" data-value="Fraturas" role="option" aria-selected="false">
+                    <span class="option-text">Fraturas</span>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#03AEF2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-dropdown-option" data-value="Amputação" role="option" aria-selected="false">
+                    <span class="option-text">Amputação</span>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#03AEF2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <div class="custom-dropdown-option" data-value="Óbito" role="option" aria-selected="false">
+                    <span class="option-text">Óbito</span>
+                    <svg class="option-check" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#03AEF2" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Hidden Native Select for React state and form compatibility -->
+                <sc-raw-select id="lesao-native-select" sc-camel-on-change="{{ onLesao }}"
+                  style="position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0;opacity:0;pointer-events:none">
+                  <option value="">Selecione</option>
+                  <option value="Arranhões e Hematomas">Arranhões e Hematomas</option>
+                  <option value="Torsão">Torsão</option>
+                  <option value="Fraturas">Fraturas</option>
+                  <option value="Amputação">Amputação</option>
+                  <option value="Óbito">Óbito</option>
+                </sc-raw-select>
+              </div>
+
+              <!-- Checkbox: Sofri um acidente -->
+              <label class="form-checkbox-label" style="display:flex;align-items:flex-start;gap:11px;cursor:pointer;user-select:none;margin-top:2px;margin-bottom:2px">
+                <input type="checkbox" name="sofri_acidente" id="sofri_acidente"
+                  style="width:18px;height:18px;margin-top:1.5px;accent-color:#03AEF2;cursor:pointer;flex-shrink:0;border-radius:4px">
+                <span style="font-family:'Geist',-apple-system,BlinkMacSystemFont,sans-serif;font-size:14px;line-height:1.42;color:#0B274E;letter-spacing:-0.01em">
+                  <strong style="font-weight:700">SOFRI UM ACIDENTE</strong> e quero falar com um especialista.
+                </span>
+              </label>
+
+              <button type="submit" class="shiny-cta-white" style="width:100%;height:56px;margin-top:4px"><span
+                  class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content">Solicitar avaliação
+                  gratuita com especialista</span></button>
+              <div style="font-size:12px;line-height:1.5;color:#64748B">Nossa <a
+                  href="https://atendimento.uniassessoriaseguros.com.br/politica-de-privacidade" target="_blank"
+                  style="color:#475569;text-decoration:underline">Política de Privacidade</a> protege seus
+                dados.<br>Este site é protegido por reCAPTCHA
+                e a <a href="https://policies.google.com/privacy" target="_blank"
+                  style="color:#475569;text-decoration:underline">Política de Privacidade</a> e os <a
+                  href="https://policies.google.com/terms" target="_blank"
+                  style="color:#475569;text-decoration:underline">Termos de Serviço</a> do Google se aplicam
+              </div>
+            </form>
+          </div>
+          <div ref="{{ hintRef }}" class="hero-hint"
+            style="position:absolute;left:0;width:1920px;top:926px;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center">
+            <div style="font-size:16px;font-weight:500;color:#0B274E">
+              Ainda está com dúvida? <span style="color:#0B274E;font-weight:700">Role para baixo e veja nossas
+                soluções</span></div>
+            <svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#0B274E" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </div>
+          <div class="hero-mobile-scroll-cue" aria-hidden="true">
+            <span>Ainda está com dúvida? <strong style="color:#03AEF2">Role para baixo</strong></span>
+            <svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="#03AEF2" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="direitos" data-screen-label="Direitos"
+      style="scroll-margin-top:80px;padding:40px 24px 40px;display:flex;flex-direction:column;align-items:center;gap:56px">
+      <div style="display:flex;flex-direction:column;align-items:center;text-align:center">
+        <span
+          style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#64748B;display:block;margin-bottom:10px">Coberturas
+          e Benefícios</span>
+        <h3
+          style="margin:0;max-width:840px;font-size:clamp(26px,3vw,40px);font-weight:600;line-height:1.2;letter-spacing:-0.025em;color:#16191D;text-wrap:balance">
+          Conheça seus direitos e como <span class="text-highlight" style="color:#03AEF2">podemos te ajudar</span></h3>
+      </div>
+    </section>
+
+    <div style="display:flex;flex-direction:column;padding:0 24px 64px;max-width:1240px;margin:0 auto">
+
+      <article id="seguro-ifood" data-screen-label="Seguro iFood" class="service-section">
+        <div class="service-content">
+          <span class="service-eyebrow">01 · Entregadores &amp; Motoboys</span>
+          <h2 class="service-title">Seguro <span class="service-accent">iFood</span></h2>
+          <p class="service-lead">Quem entrega pelo iFood conta com Seguro Pessoal gratuito durante as entregas e no
+            trajeto de volta para casa.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Cobertura para invalidez permanente e lesão temporária</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Despesas médicas, hospitalares e odontológicas</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Auxílio funeral e proteção em caso de morte acidental</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="video-case-card">
+            <div class="video-case-media">
+              <sc-if value="{{ notPlayingIfood }}">
+                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playIfood }}"
+                  aria-label="Reproduzir vídeo Seguro iFood">
+                  <img src="./assets/img/img-3.jpg" alt="Seguro iFood" class="video-case-thumb">
+                  <span class="video-case-play">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </sc-if>
+              <sc-if value="{{ isPlayingIfood }}">
+                <iframe src="https://www.youtube.com/embed/YkJoym1OltA?autoplay=1" title="Seguro iFood"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+              </sc-if>
+            </div>
+            <div class="video-case-body">
+              <div class="video-case-stars" aria-label="5 estrelas">
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <p class="video-case-quote">Receba até <strong>R$ 100 mil de indenização</strong> em acidentes durante
+                entregas.</p>
+              <div class="video-case-footer">
+                <img src="./assets/img/logo-uni.webp" alt="UNI Indenizações" class="video-case-avatar">
+                <div class="video-case-meta">
+                  <div class="video-case-name-row">
+                    <span>Seguro iFood</span>
+                    <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" fill="#03AEF2"></circle>
+                      <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="video-case-role">Entregadores e Motoboys</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="seguro-de-aplicativos" data-screen-label="Seguro de Aplicativos"
+        class="service-section service-section--reverse">
+        <div class="service-content">
+          <span class="service-eyebrow">02 · Uber, 99 &amp; Entregas</span>
+          <h2 class="service-title">Seguro de <span class="service-accent">Aplicativos</span></h2>
+          <p class="service-lead">Motoristas de transporte por aplicativo contam com o seguro obrigatório de Acidentes
+            Pessoais a Passageiros (APP) e proteção em sinistros.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Análise completa para motoristas Uber, 99, Cabify e similares</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Reembolso de prejuízos causados a terceiros em acidentes</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Atuação especializada para garantir indenização justa</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="service-image-frame orbit-frame" role="img" aria-label="UNI Indenizações atende motoristas e entregadores de Uber, iFood, 99, Rappi, Loggi e Zé Delivery">
+            <div class="orbit-glow" aria-hidden="true"></div>
+            <div class="orbit-ring orbit-ring--inner" aria-hidden="true"></div>
+            <div class="orbit-ring orbit-ring--outer" aria-hidden="true"></div>
+            <div class="orbit orbit--inner" aria-hidden="true">
+              <div class="orbit-item orbit-a0"><div class="orbit-pos"><span class="orbit-chip"><b style="color:#000;letter-spacing:-0.04em">Uber</b></span></div></div>
+              <div class="orbit-item orbit-a120"><div class="orbit-pos"><span class="orbit-chip"><b style="color:#EA1D2C;font-style:italic;letter-spacing:-0.04em">ifood</b></span></div></div>
+              <div class="orbit-item orbit-a240"><div class="orbit-pos"><span class="orbit-chip orbit-chip--square" style="background:#FFD000;border-color:#F5C400"><b style="color:#111;letter-spacing:-0.06em">99</b></span></div></div>
+            </div>
+            <div class="orbit orbit--outer" aria-hidden="true">
+              <div class="orbit-item orbit-a60"><div class="orbit-pos"><span class="orbit-chip"><b style="color:#FF441F;font-style:italic">Rappi</b></span></div></div>
+              <div class="orbit-item orbit-a180"><div class="orbit-pos"><span class="orbit-chip"><b style="color:#00A6EB">Loggi</b></span></div></div>
+              <div class="orbit-item orbit-a300"><div class="orbit-pos"><span class="orbit-chip"><b style="color:#111">Zé</b><small style="color:#111">Delivery</small></span></div></div>
+            </div>
+            <div class="orbit-center">
+              <span class="orbit-pulse" aria-hidden="true"></span>
+              <span class="orbit-pulse orbit-pulse--delay" aria-hidden="true"></span>
+              <div class="orbit-core"><img src="./assets/img/logo-uni.webp" alt="UNI Indenizações"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="seguro-dpvat" data-screen-label="Seguro DPVAT" class="service-section">
+        <div class="service-content">
+          <span class="service-eyebrow">03 · Sinistros de Trânsito</span>
+          <h2 class="service-title">Seguro <span class="service-accent">DPVAT</span></h2>
+          <p class="service-lead">Seguro obrigatório nacional que indeniza vítimas de acidentes de trânsito em todo o
+            Brasil, independentemente de quem foi a culpa.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Direito para motoristas, passageiros e pedestres acidentados</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Cobertura para despesas médicas e invalidez permanente</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Solicitação conduzida do início ao fim pela Uni Indeniza</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="video-case-card">
+            <div class="video-case-media">
+              <sc-if value="{{ notPlayingDpvat }}">
+                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playDpvat }}"
+                  aria-label="Reproduzir vídeo Seguro DPVAT">
+                  <img src="./assets/img/img-4.jpg" alt="Seguro DPVAT" class="video-case-thumb">
+                  <span class="video-case-play">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </sc-if>
+              <sc-if value="{{ isPlayingDpvat }}">
+                <iframe src="https://www.youtube.com/embed/DfT2HcS9VKI?autoplay=1" title="Seguro DPVAT"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+              </sc-if>
+            </div>
+            <div class="video-case-body">
+              <div class="video-case-stars" aria-label="5 estrelas">
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <p class="video-case-quote">Cobertura para <strong>despesas médicas, invalidez</strong> ou falecimento no
+                trânsito.</p>
+              <div class="video-case-footer">
+                <img src="./assets/img/logo-uni.webp" alt="UNI Indenizações" class="video-case-avatar">
+                <div class="video-case-meta">
+                  <div class="video-case-name-row">
+                    <span>Seguro DPVAT</span>
+                    <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" fill="#03AEF2"></circle>
+                      <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="video-case-role">Vítimas de acidentes de trânsito</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="seguro-rcf-ou-seguro-para-terceiros" data-screen-label="Seguro RCF ou Seguro para Terceiros"
+        class="service-section service-section--reverse">
+        <div class="service-content">
+          <span class="service-eyebrow">04 · Responsabilidade Civil</span>
+          <h2 class="service-title">Seguro RCF ou <span class="service-accent">para Terceiros</span></h2>
+          <p class="service-lead">Se o motorista responsável pelo acidente possuía Seguro RCF (para Terceiros), você tem
+            direito a ser indenizado pelos prejuízos sofridos.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Indenização por danos materiais e danos corporais</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Levantamento completo da apólice do causador do acidente</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Negociação técnica para garantir um valor justo</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="service-image-frame">
+            <img src="https://d335luupugsy2.cloudfront.net/cms/files/699086/1756149656/$v2swp1mu85"
+              alt="Acidente de trânsito com cobertura para terceiros">
+          </div>
+        </div>
+      </article>
+
+      <article id="seguro-de-vida" data-screen-label="Seguro de Vida" class="service-section">
+        <div class="service-content">
+          <span class="service-eyebrow">05 · Apólice Individual ou Coletiva</span>
+          <h2 class="service-title">Seguro <span class="service-accent">de Vida</span></h2>
+          <p class="service-lead">Mesmo sem saber, você pode ter um Seguro de Vida vinculado ao banco, empresa ou
+            aplicativo de entregas que garante indenização após um acidente.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Válido para apólices bancárias, empresariais ou de aplicativos</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Identificação de coberturas ativas para o seu acidente</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Acompanhamento completo até o pagamento da indenização</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="service-image-frame">
+            <img src="https://d335luupugsy2.cloudfront.net/cms/files/699086/1756149656/$29k9ubx03sj"
+              alt="Motorista e passageiro do aplicativo protegido por Seguro de Vida">
+          </div>
+        </div>
+      </article>
+
+      <article id="auxilio-acidente" data-screen-label="Auxílio-Acidente"
+        class="service-section service-section--reverse">
+        <div class="service-content">
+          <span class="service-eyebrow">06 · Benefício INSS</span>
+          <h2 class="service-title">Auxílio-<span class="service-accent">Acidente</span></h2>
+          <p class="service-lead">Sofreu um acidente de qualquer natureza e ficou com sequelas que reduzem sua
+            capacidade de trabalho? Você pode ter direito a uma complementação mensal de renda.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Benefício mensal correspondente a 50% do salário de benefício</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Pago pelo INSS até a sua aposentadoria, mesmo trabalhando</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Condução completa do processo administrativo pela nossa equipe</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="video-case-card">
+            <div class="video-case-media">
+              <sc-if value="{{ notPlayingAuxAcidente }}">
+                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playAuxAcidente }}"
+                  aria-label="Reproduzir vídeo Auxílio-Acidente">
+                  <img src="./assets/img/img-1.jpg" alt="Auxílio-Acidente" class="video-case-thumb">
+                  <span class="video-case-play">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </sc-if>
+              <sc-if value="{{ isPlayingAuxAcidente }}">
+                <iframe src="https://www.youtube.com/embed/AfuY2mBHRvM?autoplay=1" title="Auxílio-Acidente"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+              </sc-if>
+            </div>
+            <div class="video-case-body">
+              <div class="video-case-stars" aria-label="5 estrelas">
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <p class="video-case-quote">Benefício mensal de <strong>50% do salário</strong> pago até a sua
+                aposentadoria.</p>
+              <div class="video-case-footer">
+                <img src="./assets/img/logo-uni.webp" alt="UNI Indenizações" class="video-case-avatar">
+                <div class="video-case-meta">
+                  <div class="video-case-name-row">
+                    <span>Auxílio-Acidente</span>
+                    <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" fill="#03AEF2"></circle>
+                      <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="video-case-role">Benefício INSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="auxilio-doenca" data-screen-label="Auxílio-Doença" class="service-section">
+        <div class="service-content">
+          <span class="service-eyebrow">07 · Benefício INSS</span>
+          <h2 class="service-title">Auxílio-<span class="service-accent">Doença</span></h2>
+          <p class="service-lead">Benefício do INSS para quem está temporariamente incapacitado para o trabalho após um
+            acidente — inclusive em casos sem registro em carteira.</p>
+          <ul class="service-list">
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Suporte financeiro durante todo o período de recuperação</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Possibilidade de concessão mesmo sem contribuições recentes</span></li>
+            <li><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Orientação completa e acompanhamento para a perícia do INSS</span></li>
+          </ul>
+          <div class="service-trust">
+            <span class="service-trust-item"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg><span>Especialistas em sinistros</span></span>
+            <span aria-hidden="true">·</span>
+            <span class="service-trust-item">Você só paga se receber</span>
+          </div>
+          <div class="service-cta-wrap">
+            <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+          </div>
+        </div>
+        <div class="service-media">
+          <div class="video-case-card">
+            <div class="video-case-media">
+              <sc-if value="{{ notPlayingAuxDoenca }}">
+                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playAuxDoenca }}"
+                  aria-label="Reproduzir vídeo Auxílio-Doença">
+                  <img src="./assets/img/img-2.jpg" alt="Auxílio-Doença" class="video-case-thumb">
+                  <span class="video-case-play">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </sc-if>
+              <sc-if value="{{ isPlayingAuxDoenca }}">
+                <iframe src="https://www.youtube.com/embed/eWGJAWsPM38?autoplay=1" title="Auxílio-Doença"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+              </sc-if>
+            </div>
+            <div class="video-case-body">
+              <div class="video-case-stars" aria-label="5 estrelas">
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <p class="video-case-quote">Afastamento remunerado com <strong>suporte completo</strong> na perícia do
+                INSS.</p>
+              <div class="video-case-footer">
+                <img src="./assets/img/logo-uni.webp" alt="UNI Indenizações" class="video-case-avatar">
+                <div class="video-case-meta">
+                  <div class="video-case-name-row">
+                    <span>Auxílio-Doença</span>
+                    <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" fill="#03AEF2"></circle>
+                      <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="video-case-role">Benefício INSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section data-screen-label="Comece Agora"
+      style="background:transparent;padding:clamp(64px,8vw,110px) 24px;display:flex;justify-content:center;position:relative">
+      <div style="max-width:860px;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center">
+        <span class="eyebrow"
+          style="font-size:13px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#64748B;display:block;margin-bottom:16px">Comece
+          Agora</span>
+        <h2
+          style="margin:0;font-size:clamp(30px,3.8vw,52px);font-weight:600;line-height:1.15;letter-spacing:-0.03em;color:#16191D;text-wrap:balance">
+          Pronto para buscar a indenização <span class="text-highlight" style="color:#03AEF2">que você tem
+            direito?</span>
+        </h2>
+        <p
+          style="margin:20px auto 36px;max-width:680px;font-size:clamp(16px,1.6vw,19px);font-weight:400;line-height:1.6;color:#4B5563;text-wrap:pretty">
+          Junte-se a mais de <strong>12.000 pessoas</strong> que já contaram com nossa assessoria especializada para
+          receber seus direitos com total agilidade e sem burocracia.
+        </p>
+        <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Quero fazer minha avaliação</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+      </div>
+    </section>
+
+    <section id="sobre" data-screen-label="Sobre" style="scroll-margin-top:72px;padding:96px 24px">
+      <div
+        style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+        <div style="border-radius:14px;overflow:hidden"><img
+            src="https://d335luupugsy2.cloudfront.net/cms/files/1150155/1784662006/$xmu1ccmbd4" alt="Fachada da Empresa"
+            style="display:block;width:100%;height:auto"></div>
+        <div style="display:flex;flex-direction:column;gap:24px">
+          <span
+            style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#64748B;display:block;margin-bottom:10px">Sobre
+            a Uni Indenizações</span>
+          <h2
+            style="margin:0;font-size:clamp(26px,2.8vw,38px);font-weight:600;line-height:1.2;letter-spacing:-0.025em;color:#16191D;text-wrap:balance">
+            Na hora mais difícil, conte com a <span class="text-highlight" style="color:#03AEF2">Uni Indeniza</span>
+          </h2>
+          <p style="margin:0;font-size:17px;line-height:1.65;text-wrap:pretty">Somos uma empresa de referência no
+            mercado de indenizações que busca ajudar vítimas de acidentes a receber as indenizações que merecem. Com
+            mais de 14 anos de experiência e atendimento no Paraná e regiões vizinhas, já fizemos a diferença na vida de
+            milhares de brasileiros.</p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+            <div
+              style="background-color:#F2F7FB;border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:10px">
+              <h3 style="margin:0;font-size:17px;font-weight:500;color:#4B5563"><span
+                  style="color:#03AEF2;font-size:42px;font-weight:700;letter-spacing:-0.03em;display:block;border-bottom:3px solid #03AEF2;width:fit-content;margin-bottom:8px">+12.000</span>Processos
+                Concluídos</h3>
+              <p style="margin:0;font-size:15px;line-height:1.55">Confiança, segurança e apoio no momento em que você
+                mais necessita de ajuda.</p>
+            </div>
+            <div
+              style="background-color:#F2F7FB;border-radius:10px;padding:28px;display:flex;flex-direction:column;gap:10px">
+              <h3 style="margin:0;font-size:17px;font-weight:500;color:#4B5563"><span
+                  style="color:#03AEF2;font-size:42px;font-weight:700;letter-spacing:-0.03em;display:block;border-bottom:3px solid #03AEF2;width:fit-content;margin-bottom:8px">98%</span>de
+                Casos Solucionados</h3>
+              <p style="margin:0;font-size:15px;line-height:1.55">Minimize as consequências desfavoráveis com nossos
+                rígidos protocolos operacionais.</p>
+            </div>
+          </div>
+          <div><button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" data-screen-label="Depoimento"
+      style="scroll-margin-top:72px;background-color:#F2F7FB;border-radius:24px 24px 0 0;padding:96px 24px">
+      <div style="max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:48px">
+        <div style="display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center">
+          <span
+            style="font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#64748B;display:block;margin-bottom:10px">Depoimentos
+            Reais</span>
+          <h2 style="margin:0;font-size:clamp(28px,3vw,42px);font-weight:600;letter-spacing:-0.025em;color:#16191D">Quem
+            confia em <span class="text-highlight" style="color:#03AEF2">nosso trabalho</span></h2>
+          <p style="margin:8px 0 0;font-size:16px;font-weight:500;color:#64748B">Você está a um clique de uma <span
+              class="text-highlight" style="color:#03AEF2;font-weight:600">análise gratuita</span></p>
+        </div>
+        <div
+          style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:56px;align-items:center">
+          <div class="video-case-card">
+            <div class="video-case-media">
+              <sc-if value="{{ notPlayingDepoimento }}">
+                <button type="button" class="video-case-trigger" sc-camel-on-click="{{ playDepoimento }}"
+                  aria-label="Reproduzir depoimento Grazielle">
+                  <img src="https://i.ytimg.com/vi/JUmf_ULGtvY/hqdefault.jpg" alt="Depoimento Grazielle"
+                    class="video-case-thumb">
+                  <span class="video-case-play">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="currentColor" aria-hidden="true"
+                      style="margin-left:3px">
+                      <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                  </span>
+                </button>
+              </sc-if>
+              <sc-if value="{{ isPlayingDepoimento }}">
+                <iframe src="https://www.youtube.com/embed/JUmf_ULGtvY?autoplay=1" title="Depoimento Grazielle"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen="" style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe>
+              </sc-if>
+            </div>
+            <div class="video-case-body">
+              <div class="video-case-stars" aria-label="5 estrelas">
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+                <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                  </path>
+                </svg>
+              </div>
+              <p class="video-case-quote">Recebeu <strong>Seguro DPVAT, Seguro de Vida e Auxílio Acidente</strong> com
+                atendimento impecável.</p>
+              <div class="video-case-footer">
+                <img src="./assets/img/logo-uni.webp" alt="UNI Indenizações" class="video-case-avatar">
+                <div class="video-case-meta">
+                  <div class="video-case-name-row">
+                    <span>Uni Indenizações</span>
+                    <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" aria-hidden="true">
+                      <circle cx="12" cy="12" r="10" fill="#03AEF2"></circle>
+                      <path d="M8 12.5l2.5 2.5 5.5-5.5" stroke="#fff" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                    </svg>
+                  </div>
+                  <span class="video-case-role">Assessoria Especializada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <p style="margin:0;font-size:20px;line-height:1.6;font-weight:500;text-wrap:pretty">A Grazielle relata que
+              sua experiência conosco foi impecável. Onde a Uni Indeniza sempre esteve à disposição para tirar todas as
+              suas dúvidas, bem como sua equipe sempre agiu com proatividade e seriedade.</p>
+            <div style="display:flex;flex-direction:column;gap:4px">
+              <h5 style="margin:0;font-size:17px;font-weight:600;color:#0B274E">Grazielle</h5>
+              <span style="font-size:14px;color:#6b747b">Cliente que recebeu Seguro DPVAT, Seguro de Vida e Auxílio
+                Acidente.</span>
+            </div>
+            <div><button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Falar com Consultor</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="background:transparent;border-top:1px solid rgba(11,39,78,0.06);padding:64px 24px 48px">
+      <div style="max-width:1200px;margin:0 auto">
+        <!-- Top Row: Brand Info + Nav Links + Social Icons -->
+        <div style="display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:space-between;gap:36px">
+          <!-- Left: Logo & Description -->
+          <div style="display:flex;flex-direction:column;max-width:380px">
+            <a href="#" sc-camel-on-click="{{ toTopLink }}" style="display:inline-block;text-decoration:none">
+              <img src="./assets/img/logo-uni.webp" alt="Uni Indenizações" style="height:40px;width:auto;display:block">
+            </a>
+            <p style="margin:14px 0 0;font-size:14px;line-height:1.55;color:#64748B;font-family:'Geist',sans-serif">
+              Assessoria especializada em indenizações e benefícios. Auxiliamos vítimas de acidentes a receberem o valor
+              integral e justo por direito.
+            </p>
+          </div>
+
+          <!-- Right: Navigation Menu & Social Icons -->
+          <div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px 40px">
+            <nav class="footer-nav" style="display:flex;flex-wrap:wrap;align-items:center;gap:20px 28px">
+              <a href="#" sc-camel-on-click="{{ toTopLink }}"
+                style="color:#374151;text-decoration:none;font-size:14px;font-weight:500;font-family:'Geist',sans-serif;transition:color 0.2s"
+                style-hover="color:#03AEF2">Início</a>
+              <a href="#sobre"
+                style="color:#374151;text-decoration:none;font-size:14px;font-weight:500;font-family:'Geist',sans-serif;transition:color 0.2s"
+                style-hover="color:#03AEF2">Quem somos</a>
+              <a href="#direitos"
+                style="color:#374151;text-decoration:none;font-size:14px;font-weight:500;font-family:'Geist',sans-serif;transition:color 0.2s"
+                style-hover="color:#03AEF2">Coberturas</a>
+              <a href="#depoimentos"
+                style="color:#374151;text-decoration:none;font-size:14px;font-weight:500;font-family:'Geist',sans-serif;transition:color 0.2s"
+                style-hover="color:#03AEF2">Depoimentos</a>
+              <a href="#avaliacao" sc-camel-on-click="{{ scrollToForm }}"
+                style="color:#374151;text-decoration:none;font-size:14px;font-weight:500;font-family:'Geist',sans-serif;transition:color 0.2s"
+                style-hover="color:#03AEF2">Avaliação Gratuita</a>
+            </nav>
+
+            <!-- Social Icons (Instagram, YouTube, WhatsApp) -->
+            <div style="display:flex;align-items:center;gap:16px">
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+                style="color:#16191D;display:flex;align-items:center;justify-content:center;transition:color 0.2s;text-decoration:none"
+                style-hover="color:#03AEF2">
+                <svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <!-- YouTube -->
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+                style="color:#16191D;display:flex;align-items:center;justify-content:center;transition:color 0.2s;text-decoration:none"
+                style-hover="color:#03AEF2">
+                <svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z">
+                  </path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"></polygon>
+                </svg>
+              </a>
+              <!-- WhatsApp -->
+              <a href="javascript:void(0)" sc-camel-on-click="{{ scrollToForm }}" aria-label="Contato"
+                style="color:#16191D;display:flex;align-items:center;justify-content:center;transition:color 0.2s;text-decoration:none"
+                style-hover="color:#03AEF2">
+                <svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.88 9.88 0 0 1 9.88 9.89c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.94L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div style="height:1px;width:100%;background:rgba(0,0,0,0.08);margin:36px 0 24px"></div>
+
+        <!-- Bottom Row: Legal / Copyright + Policy Links + Mega Ads -->
+        <div style="display:flex;flex-direction:column;gap:12px;font-family:'Geist',sans-serif">
+          <div style="font-size:13px;color:#64748B;line-height:1.5">
+            Uni Indenizações® é uma marca da empresa Uni Assessoria e Consultoria – CNPJ: 60.213.498/0001-00
+          </div>
+          <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+            <div class="footer-legal-links" style="display:flex;align-items:center;gap:10px;font-size:13px;color:#64748B">
+              <a href="#" style="color:#64748B;text-decoration:none" style-hover="color:#03AEF2">Termos de Uso</a>
+              <span>•</span>
+              <a href="https://atendimento.uniassessoriaseguros.com.br/politica-de-privacidade" target="_blank"
+                rel="noopener noreferrer" style="color:#64748B;text-decoration:none"
+                style-hover="color:#03AEF2">Política de Privacidade</a>
+              <span>•</span>
+              <a href="#sobre" style="color:#64748B;text-decoration:none" style-hover="color:#03AEF2">Considerações
+                Importantes</a>
+            </div>
+            <div class="mega-ads-credit" style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:13px;color:#64748B">Feito por:</span>
+              <a href="https://megaads.com.br/" target="_blank" rel="noopener noreferrer"
+                aria-label="Acessar o site da Mega Ads" style="display:inline-flex;align-items:center">
+                <img src="./assets/mega-ads-logo.webp" alt="Mega Ads Logo" style="height:18px;width:auto;opacity:0.85">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <sc-if value="{{ showOk }}" hint-placeholder-val="{{ false }}">
+      <div sc-camel-on-click="{{ close }}"
+        style="position:fixed;inset:0;background:rgba(30,40,48,0.55);display:flex;align-items:center;justify-content:center;padding:24px;z-index:30">
+        <div class="modal-card"
+          style="background:#fff;border-radius:14px;max-width:520px;padding:48px 40px;display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center">
+          <h2 style="margin:0;font-size:26px;font-weight:600;letter-spacing:-0.02em;color:#0B274E;text-wrap:balance">
+            Obrigado! Em breve você receberá nosso contato.</h2>
+          <h3 style="margin:0;font-size:17px;font-weight:600;line-height:1.5">Se desejar, fale agora com um <strong
+              style="color:#03AEF2">especialista</strong> via WhatsApp</h3>
+          <button class="shiny-cta" sc-camel-on-click="{{ scrollToForm }}"><span class="shiny-dots" aria-hidden="true"></span><span class="shiny-cta-content"><span>Solicitar avaliação com especialista</span><svg width="18" height="18" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"></path></svg></span></button>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ showNo }}" hint-placeholder-val="{{ false }}">
+      <div sc-camel-on-click="{{ close }}"
+        style="position:fixed;inset:0;background:rgba(30,40,48,0.55);display:flex;align-items:center;justify-content:center;padding:24px;z-index:30">
+        <div class="modal-card"
+          style="background:#fff;border-radius:14px;max-width:560px;padding:48px 40px;display:flex;flex-direction:column;gap:18px;text-align:center">
+          <h2 style="margin:0;font-size:24px;font-weight:600;letter-spacing:-0.02em;color:#0B274E;text-wrap:balance">
+            Olá, infelizmente você não possui direitos a indenizações ou benefícios.</h2>
+          <h3 style="margin:0;font-size:16px;font-weight:500;line-height:1.55;text-wrap:pretty">Caso você tenha
+            conhecimento de um caso de acidente, ocorrido nos últimos 15 anos e com lesões mais graves, poderemos
+            analisar seu caso.</h3>
+        </div>
+      </div>
+    </sc-if>
+  </x-dc>
+  <script type="text/x-dc" data-dc-script=""
+    data-props="{&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;554333249320&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;WhatsApp&quot;},&quot;waMessage&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Olá! Acessei o site da Uni Indenizações e gostaria de uma avaliação sobre meu acidente.&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;WhatsApp&quot;}}">
+class Component extends DCLogic {
+  state = { result: null, lesao: '', playingVideo: null };
+  trackRef = React.createRef(); stageRef = React.createRef(); contentStageRef = React.createRef(); bgRef = React.createRef();
+  videoRef = React.createRef(); formRef = React.createRef(); uRef = React.createRef();
+  uniRef = React.createRef(); hintRef = React.createRef(); navTrackRef = React.createRef(); waveRef = React.createRef();
+  updateNav() {
+    const tr = this.navTrackRef.current; if (!tr) return;
+    const links = [...tr.querySelectorAll('[data-nav]')];
+    let active = null;
+    links.forEach(a => { const s = document.getElementById(a.dataset.nav); if (s && s.getBoundingClientRect().top < window.innerHeight * 0.4) active = a; });
+    if (active === this.activeNav) return;
+    this.activeNav = active;
+    links.forEach(a => a.classList.toggle('is-active', a === active));
+    const parent = tr.querySelector('[data-nav-parent="servicos"]');
+    if (parent) parent.classList.toggle('is-active', !!(active && active.dataset.service));
+  }
+  componentDidMount() {
+    this.tick = () => { this.raf = null; this.update(); this.updateNav(); };
+    this.onScroll = () => { if (!this.raf) this.raf = requestAnimationFrame(this.tick); };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll);
+    this.update();
+  }
+  componentDidUpdate() { this.update(); }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+  }
+  update() {
+    const t = this.trackRef.current, st = this.stageRef.current, cst = this.contentStageRef.current;
+    if (!t || !st || !this.bgRef.current) return;
+    const vw = window.innerWidth;
+    const vh = window.innerHeight;
+    const isMobile = vw <= 900;
+
+    const r = t.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - vh)));
+    const cl = x => Math.min(1, Math.max(0, x));
+    const seg = (a, b) => { const x = cl((p - a) / (b - a)); return x < .5 ? 4*x*x*x : 1 - Math.pow(-2*x + 2, 3) / 2; };
+    const L = (a, b, k) => a + (b - a) * k;
+
+    const formEl = this.formRef.current;
+    const videoEl = this.videoRef.current;
+    const bg = this.bgRef.current;
+    const uni = this.uniRef.current;
+
+    if (isMobile) {
+      // Mobile: conteúdo flui nativamente em 100% da largura via CSS (sem transform: scale)
+      if (cst) cst.style.transform = '';
+      if (videoEl) {
+        videoEl.style.left = '';
+        videoEl.style.top = '';
+        videoEl.style.width = '';
+        videoEl.style.height = '';
+        videoEl.style.opacity = '';
+        videoEl.style.transform = '';
+        videoEl.style.pointerEvents = '';
+      }
+      if (formEl) {
+        formEl.style.left = '';
+        formEl.style.top = '';
+        formEl.style.width = '';
+        formEl.style.opacity = '';
+        formEl.style.transform = '';
+        formEl.style.pointerEvents = '';
+      }
+
+      // Escala do palco de morphing calibrada para a logo UNI (398x300) ocupar ~72% da tela do celular
+      const s = Math.min((vw * 0.72) / 398, (vh - 60) / 760);
+      const ox = (vw / s - 1920) / 2;
+      const oy = (vh / s - 1080) / 2;
+      st.style.transform = `translate(-50%,-50%) scale(${s})`;
+
+      const kPill = seg(0.02, 0.28);
+      const kDown = seg(0.24, 0.44);
+      const kColor = seg(0.32, 0.56);
+      const kU = seg(0.44, 0.64);
+      const kSwap = seg(0.60, 0.70);
+      const kUni = seg(0.70, 0.90);
+
+      const left = L(-ox, 761, kPill);
+      const width = L(1920 + 2 * ox, 210, kPill);
+      const top = L(-oy - 140, 390, kU);
+      const bottom = L(L(L(1080 + oy, 1015, kPill), 657, kDown), 648, kU);
+      const rad = L(0, 105, kPill);
+
+      bg.style.left = left + 'px';
+      bg.style.width = width + 'px';
+      bg.style.top = top + 'px';
+      bg.style.height = Math.max(0, bottom - top) + 'px';
+      bg.style.borderRadius = `0 0 ${rad}px ${rad}px`;
+      const c1 = [248, 250, 252], c2 = [3, 174, 242];
+      bg.style.backgroundColor = `rgb(${c1.map((v, i) => Math.round(L(v, c2[i], kColor))).join(',')})`;
+      bg.style.backgroundImage = 'none';
+      bg.style.opacity = 1 - kSwap;
+      if (this.waveRef.current) this.waveRef.current.style.opacity = String(1 - kColor);
+      if (this.uRef.current) this.uRef.current.style.opacity = kUni > 0 ? 0 : kSwap;
+      if (uni) {
+        uni.style.opacity = kUni > 0 ? 1 : 0;
+        uni.style.clipPath = `inset(0 ${L(47, 0, kUni)}% 0 0)`;
+      }
+      return;
+    }
+
+    // Desktop: palco cinematográfico 1920x1080 completo (sticky top:0 height:100vh — zero vão sob a navbar)
+    const s = Math.min(vw / 1920, (vh - 68) / 1080);
+    const ox = (vw / s - 1920) / 2;
+    const oy = (vh / s - 1080) / 2;
+    const stageTf = `translate(-50%,-50%) scale(${s})`;
+    st.style.transform = stageTf;
+    if (cst) cst.style.transform = stageTf;
+
+    if (videoEl) {
+      videoEl.style.left = '298px';
+      videoEl.style.top = '123px';
+      videoEl.style.width = '454px';
+      videoEl.style.height = '763px';
+    }
+    if (formEl) {
+      formEl.style.left = '992px';
+      formEl.style.top = '123px';
+      formEl.style.width = '628px';
+    }
+
+    const kOut = seg(0.04, 0.22);
+    const kPill = seg(0.16, 0.40);
+    const kDown = seg(0.40, 0.56);
+    const kColor = seg(0.46, 0.68);
+    const kU = seg(0.56, 0.72);
+    const kSwap = seg(0.68, 0.76);
+    const kUni = seg(0.78, 0.94);
+
+    [videoEl, formEl].forEach(el => {
+      if (el) {
+        el.style.opacity = 1 - kOut;
+        el.style.transform = `translateY(${-40 * kOut}px) scale(${1 - 0.06 * kOut})`;
+        el.style.pointerEvents = kOut > 0.5 ? 'none' : 'auto';
+      }
+    });
+
+    if (this.hintRef.current) {
+      this.hintRef.current.style.opacity = 1 - seg(0, 0.05);
+    }
+
+    const left = L(-ox, 761, kPill);
+    const width = L(1920 + 2 * ox, 210, kPill);
+    const top = L(-oy - 140, 390, kU);
+    const bottom = L(L(L(1010, 1015, kPill), 657, kDown), 648, kU);
+    const rad = L(190, 105, kPill);
+
+    bg.style.left = left + 'px';
+    bg.style.width = width + 'px';
+    bg.style.top = top + 'px';
+    bg.style.height = Math.max(0, bottom - top) + 'px';
+    bg.style.borderRadius = `0 0 ${rad}px ${rad}px`;
+    const c1 = [248, 250, 252], c2 = [3, 174, 242];
+    bg.style.backgroundColor = `rgb(${c1.map((v, i) => Math.round(L(v, c2[i], kColor))).join(',')})`;
+    bg.style.backgroundImage = 'none';
+    bg.style.opacity = 1 - kSwap;
+    if (this.waveRef.current) this.waveRef.current.style.opacity = String(1 - kColor);
+    if (this.uRef.current) this.uRef.current.style.opacity = kUni > 0 ? 0 : kSwap;
+    if (uni) {
+      uni.style.opacity = kUni > 0 ? 1 : 0;
+      uni.style.clipPath = `inset(0 ${L(47, 0, kUni)}% 0 0)`;
+    }
+  }
+  waUrl() {
+    const num = String(this.props.whatsapp || '554333249320').replace(/\D/g, '') || '554333249320';
+    const msg = encodeURIComponent(this.props.waMessage || 'Olá! Acessei o site da Uni Indenizações e gostaria de uma avaliação sobre meu acidente.');
+    return `https://wa.me/${num}?text=${msg}`;
+  }
+  renderVals() {
+    return {
+      trackRef: this.trackRef, stageRef: this.stageRef, contentStageRef: this.contentStageRef, bgRef: this.bgRef,
+      videoRef: this.videoRef, formRef: this.formRef, uRef: this.uRef,
+      uniRef: this.uniRef, hintRef: this.hintRef, waveRef: this.waveRef,
+      showOk: this.state.result === 'ok', showNo: this.state.result === 'no',
+      onLesao: e => this.setState({ lesao: e.target.value }),
+      onSubmit: e => {
+        e.preventDefault();
+        const l = (this.state.lesao || '').toLowerCase();
+        this.setState({ result: (l.includes('arranhões') || l.includes('arranhoes') || l === 'selecione' || !l) ? 'no' : 'ok' });
+      },
+      close: () => this.setState({ result: null }),
+      toTop: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
+      scrollToForm: (e) => {
+        if (e && e.preventDefault) e.preventDefault();
+        const f = document.getElementById('avaliacao');
+        if (window.innerWidth > 900) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          const inp = f && f.querySelector('input');
+          if (inp) setTimeout(() => inp.focus(), 550);
+        } else if (f) {
+          const y = f.getBoundingClientRect().top + window.pageYOffset - 76;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+          const inp = f.querySelector('input');
+          if (inp) setTimeout(() => inp.focus(), 550);
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      },
+      waUrl: this.waUrl(),
+      navTrackRef: this.navTrackRef,
+      navPrev: () => this.navTrackRef.current && this.navTrackRef.current.scrollBy({ left: -220, behavior: 'smooth' }),
+      navNext: () => this.navTrackRef.current && this.navTrackRef.current.scrollBy({ left: 220, behavior: 'smooth' }),
+      toTopLink: e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); },
+      openWa: () => window.open(this.waUrl(), '_blank'),
+      isPlayingIfood: this.state.playingVideo === 'seguro-ifood',
+      notPlayingIfood: this.state.playingVideo !== 'seguro-ifood',
+      playIfood: () => this.setState({ playingVideo: 'seguro-ifood' }),
+      isPlayingDpvat: this.state.playingVideo === 'seguro-dpvat',
+      notPlayingDpvat: this.state.playingVideo !== 'seguro-dpvat',
+      playDpvat: () => this.setState({ playingVideo: 'seguro-dpvat' }),
+      isPlayingAuxAcidente: this.state.playingVideo === 'auxilio-acidente',
+      notPlayingAuxAcidente: this.state.playingVideo !== 'auxilio-acidente',
+      playAuxAcidente: () => this.setState({ playingVideo: 'auxilio-acidente' }),
+      isPlayingAuxDoenca: this.state.playingVideo === 'auxilio-doenca',
+      notPlayingAuxDoenca: this.state.playingVideo !== 'auxilio-doenca',
+      playAuxDoenca: () => this.setState({ playingVideo: 'auxilio-doenca' }),
+      isPlayingDepoimento: this.state.playingVideo === 'depoimento',
+      notPlayingDepoimento: this.state.playingVideo !== 'depoimento',
+      playDepoimento: () => this.setState({ playingVideo: 'depoimento' }),
+      isPlayingHero: this.state.playingVideo === 'hero',
+      notPlayingHero: this.state.playingVideo !== 'hero',
+      playHero: () => this.setState({ playingVideo: 'hero' })
+    };
+  }
+}
+</script>
+
+
+
+  <script>
+    (function initCustomDropdown() {
+      // Event delegation handles dynamic React mounting
+      document.addEventListener('click', function (e) {
+        const wrap = document.getElementById('custom-dropdown-lesao');
+        if (!wrap) return;
+
+        const trigger = wrap.querySelector('#lesao-dropdown-trigger');
+        const menu = wrap.querySelector('#lesao-dropdown-menu');
+        const label = wrap.querySelector('#lesao-dropdown-label');
+        const nativeSelect = wrap.querySelector('#lesao-native-select');
+        const option = e.target.closest('.custom-dropdown-option');
+
+        // Click on trigger
+        if (trigger && (e.target === trigger || trigger.contains(e.target))) {
+          e.preventDefault();
+          const isOpen = wrap.classList.toggle('is-open');
+          trigger.setAttribute('aria-expanded', String(isOpen));
+          return;
+        }
+
+        // Click on an option
+        if (option && wrap.contains(option)) {
+          e.preventDefault();
+          const val = option.getAttribute('data-value') || '';
+          const text = option.querySelector('.option-text') ? option.querySelector('.option-text').textContent.trim() : option.textContent.trim();
+
+          // Update trigger label
+          if (val === '') {
+            label.textContent = 'Selecione';
+            label.classList.add('placeholder');
+          } else {
+            label.textContent = text;
+            label.classList.remove('placeholder');
+          }
+
+          // Update option selection states
+          wrap.querySelectorAll('.custom-dropdown-option').forEach(function (opt) {
+            const isMatch = opt.getAttribute('data-value') === val;
+            opt.classList.toggle('is-selected', isMatch);
+            opt.setAttribute('aria-selected', String(isMatch));
+          });
+
+          // Sync with hidden native select & trigger change for React / DC Logic
+          if (nativeSelect) {
+            nativeSelect.value = val;
+            nativeSelect.dispatchEvent(new Event('change', { bubbles: true }));
+          }
+
+          // Close dropdown
+          wrap.classList.remove('is-open');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+          return;
+        }
+
+        // Click outside closes the dropdown
+        if (!wrap.contains(e.target)) {
+          wrap.classList.remove('is-open');
+          if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Keyboard accessibility (Escape key closes)
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+          const wrap = document.getElementById('custom-dropdown-lesao');
+          if (wrap && wrap.classList.contains('is-open')) {
+            wrap.classList.remove('is-open');
+            const trigger = wrap.querySelector('#lesao-dropdown-trigger');
+            if (trigger) {
+              trigger.setAttribute('aria-expanded', 'false');
+              trigger.focus();
+            }
+          }
+        }
+      });
+    })();
+  </script>
+
+
+  <!-- Barra de Aviso de Cookies (LGPD) -->
+  <div id="uniCookieBanner" class="uni-cookie-banner" role="region" aria-label="Aviso de Cookies">
+    <div class="uni-cookie-inner">
+      <p class="uni-cookie-text">
+        Utilizamos cookies para melhorar sua experiência e desempenho em nosso site. Ao utilizá-lo, você concorda com o uso de cookies.
+        <a href="https://atendimento.uniassessoriaseguros.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer" class="uni-cookie-link">Política de Privacidade</a>.
+      </p>
+      <button type="button" id="uniCookieAcceptBtn" class="uni-cookie-btn">Ok, entendi!</button>
+    </div>
+  </div>
+
+  <script>
+    (function initCookieConsent() {
+      var CONSENT_KEY = 'uni_cookies_consent';
+      try {
+        if (localStorage.getItem(CONSENT_KEY) === 'accepted') {
+          return; // Já consentido previamente
+        }
+      } catch (e) {
+        // Fallback em caso de restrições de localStorage
+      }
+
+      var banner = document.getElementById('uniCookieBanner');
+      var btn = document.getElementById('uniCookieAcceptBtn');
+      if (!banner || !btn) return;
+
+      // Animação de entrada suave após breve delay
+      setTimeout(function () {
+        banner.classList.add('is-visible');
+      }, 600);
+
+      btn.addEventListener('click', function () {
+        try {
+          localStorage.setItem(CONSENT_KEY, 'accepted');
+        } catch (e) {}
+
+        banner.classList.remove('is-visible');
+        setTimeout(function () {
+          if (banner.parentNode) {
+            banner.parentNode.removeChild(banner);
+          }
+        }, 400);
+      });
+    })();
+  </script>
+
+</body>
+
+</html>
